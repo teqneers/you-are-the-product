@@ -1,0 +1,90 @@
+.graph line {
+  stroke: var(--line);
+}
+
+.graph .highlight {
+  stroke: var(--text);
+  stroke-width: 4px;
+}
+
+.graph image {
+  pointer-events: none;
+}
+
+.graph g {
+  cursor: grab;
+}
+
+.graph-tip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 260px;
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.graph-container {
+  position: relative;
+}
+
+.legend-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.legend-button.active {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.legend {
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  max-width: 260px;
+  margin: 0;
+  padding: 10px 12px;
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.4;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.legend li {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.legend .dot {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--c);
+}
+
+.legend .dot.ring {
+  background: var(--bg);
+  box-shadow: 0 0 0 2px var(--c);
+}
+
+.legend .dot.square {
+  border-radius: 3px;
+  background: var(--bg);
+  box-shadow: 0 0 0 2px var(--c);
+}

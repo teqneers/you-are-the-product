@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Concept 3 "In the Cart": a shopping cart, and the thing being bought is a person. -->
+  <style>
+    .i{fill:#0f1115}.is{fill:none;stroke:#0f1115}.a{fill:#ff4d5e}
+    @media (prefers-color-scheme:dark){.i{fill:#e8eaf0}.is{stroke:#e8eaf0}}
+  </style>
+  <g class="a">
+    <circle cx="72" cy="26" r="13"/>
+    <path d="M50 86 V70 C50 58 60 52 72 52 C84 52 94 58 94 70 V86 Z"/>
+  </g>
+  <path class="is" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M6 24 H20 L33 86 H104 L116 50 H28"/>
+  <circle class="i" cx="44" cy="106" r="9"/>
+  <circle class="i" cx="96" cy="106" r="9"/>
+</svg>

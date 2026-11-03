@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Concept 2 "Network Eye": an eye drawn as a tracker network, with a red iris at its centre. -->
+  <style>
+    .i{fill:#0f1115}.is{fill:none;stroke:#0f1115}.a{fill:#ff4d5e}.as{fill:none;stroke:#ff4d5e}
+    @media (prefers-color-scheme:dark){.i{fill:#e8eaf0}.is{stroke:#e8eaf0}}
+  </style>
+  <path class="as" stroke-width="3" opacity=".55"
+    d="M64 64 L10 64 M64 64 L40 34 M64 64 L88 34 M64 64 L118 64 M64 64 L88 94 M64 64 L40 94"/>
+  <path class="is" stroke-width="8" stroke-linejoin="round" d="M10 64 L40 34 H88 L118 64 L88 94 H40 Z"/>
+  <g class="i">
+    <circle cx="10" cy="64" r="9"/><circle cx="40" cy="34" r="10"/><circle cx="88" cy="34" r="10"/>
+    <circle cx="118" cy="64" r="9"/><circle cx="88" cy="94" r="10"/><circle cx="40" cy="94" r="10"/>
+  </g>
+  <path class="a" fill-rule="evenodd"
+    d="M40 64 a24 24 0 1 0 48 0 a24 24 0 1 0 -48 0 Z M54 64 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+  <circle class="i" cx="64" cy="64" r="4.5"/>
+</svg>

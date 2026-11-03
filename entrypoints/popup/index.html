@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Firefox: no built-in extension styles, they turn the text dark on our dark background. -->
+    <meta name="manifest.browser_style" content="false" />
+    <title>You Are The Product</title>
+    <link rel="icon" href="/icon/32.png" />
+  </head>
+  <body>
+    <main>
+      <div class="live" id="live"></div>
+      <div class="actions">
+        <button id="panel" data-i18n="popup.keepOpen"></button>
+        <button id="open" data-i18n="common.openOverview"></button>
+      </div>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

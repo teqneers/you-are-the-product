@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Concept 1 "Tagged": a price tag with a person cut into it. You are the item on the shelf. -->
+  <style>
+    .i{fill:#0f1115}.ar{fill:#ff4d5e;stroke:#ff4d5e}
+    @media (prefers-color-scheme:dark){.i{fill:#e8eaf0}}
+  </style>
+  <g transform="rotate(-18 64 64)">
+    <path class="ar" stroke-width="8" stroke-linejoin="round" fill-rule="evenodd"
+      d="M30 50 L64 14 L98 50 V108 a8 8 0 0 1 -8 8 H38 a8 8 0 0 1 -8 -8 Z M55 38 a9 9 0 1 0 18 0 a9 9 0 1 0 -18 0 Z"/>
+    <circle class="i" cx="64" cy="71" r="12"/>
+    <path class="i" d="M42 108 C42 95 52 89 64 89 C76 89 86 95 86 108 Z"/>
+  </g>
+</svg>

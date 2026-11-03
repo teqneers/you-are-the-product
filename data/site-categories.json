@@ -1,0 +1,195 @@
+{
+  "health": [
+    "apotheken-umschau.de", "netdoktor.de", "netdoktor.at", "gesundheit.de", "jameda.de", "doctolib.de", "doctolib.fr", "doctolib.it",
+    "docfinder.at", "docmorris.de", "shop-apotheke.com", "shop-apotheke.at", "medpex.de", "aponeo.de", "gesund.bund.de", "gesundheitsinformation.de",
+    "aerzteblatt.de", "rki.de", "tk.de", "aok.de", "barmer.de", "dak.de", "oegk.at", "gesundheit.gv.at",
+    "helsana.ch", "css.ch", "swica.ch", "sanitas.com", "zurrose.ch", "deutsche-depressionshilfe.de", "aidshilfe.de", "krebshilfe.de",
+    "krebsinformationsdienst.de", "weightwatchers.com", "webmd.com", "mayoclinic.org", "healthline.com", "medicalnewstoday.com", "nhs.uk", "drugs.com",
+    "verywellhealth.com", "medlineplus.gov", "who.int", "cdc.gov", "nih.gov", "psychologytoday.com", "betterhelp.com", "talkspace.com",
+    "goodrx.com", "zocdoc.com", "plannedparenthood.org", "flo.health", "doctissimo.fr", "ameli.fr", "passeportsante.net", "vidal.fr",
+    "webconsultas.com", "topdoctors.es", "doctoralia.es", "cuidateplus.com", "paginemediche.it", "my-personaltrainer.it", "miodottore.it", "thuisarts.nl",
+    "apotheek.nl", "zorgkaartnederland.nl", "znanylekarz.pl", "medonet.pl", "doz.pl", "tuasaude.com", "minhavida.com.br", "drogasil.com.br",
+    "doctoralia.com.br", "ulekare.cz", "drmax.cz", "sundhed.dk", "1177.se", "apoteket.se", "kry.se", "terveyskirjasto.fi",
+    "mehilainen.fi", "terveystalo.com", "medicalnote.jp"
+  ],
+  "jobs": [
+    "stepstone.de", "stepstone.at", "stepstone.nl", "indeed.com", "indeed.de", "monster.de", "glassdoor.com", "kununu.com",
+    "arbeitsagentur.de", "jobs.ch", "jobup.ch", "jobscout24.ch", "karriere.at", "ams.at", "hokify.at", "absolventa.de",
+    "azubiyo.de", "ausbildung.de", "jobvector.de", "heyjobs.co", "join.com", "freelancermap.de", "malt.de", "xing.com",
+    "upwork.com", "fiverr.com", "ziprecruiter.com", "reed.co.uk", "totaljobs.com", "wellfound.com", "welcometothejungle.com", "hellowork.com",
+    "francetravail.fr", "apec.fr", "cadremploi.fr", "infojobs.net", "infojobs.it", "infojobs.com.br", "jobandtalent.com", "nationalevacaturebank.nl",
+    "werk.nl", "pracuj.pl", "praca.pl", "nofluffjobs.com", "justjoin.it", "catho.com.br", "vagas.com.br", "gupy.io",
+    "jobs.cz", "prace.cz", "jobindex.dk", "arbetsformedlingen.se", "duunitori.fi", "tyomarkkinatori.fi", "rikunabi.com", "mynavi.jp",
+    "doda.jp", "en-japan.com", "saramin.co.kr", "jobkorea.co.kr", "wanted.co.kr", "albamon.com"
+  ],
+  "finance": [
+    "sparkasse.de", "deutsche-bank.de", "commerzbank.de", "comdirect.de", "ing.de", "dkb.de", "postbank.de", "consorsbank.de",
+    "n26.com", "vr.de", "hypovereinsbank.de", "traderepublic.com", "scalable.capital", "onvista.de", "finanzen.net", "boerse.de",
+    "check24.de", "verivox.de", "schufa.de", "paypal.com", "klarna.com", "allianz.de", "ergo.de", "huk.de",
+    "flatex.de", "elster.de", "sparkasse.at", "raiffeisen.at", "bankaustria.at", "uniqa.at", "ubs.com", "postfinance.ch",
+    "raiffeisen.ch", "comparis.ch", "swissquote.com", "twint.ch", "chase.com", "bankofamerica.com", "wellsfargo.com", "americanexpress.com",
+    "revolut.com", "wise.com", "robinhood.com", "coinbase.com", "binance.com", "bitpanda.com", "vanguard.com", "boursorama.com",
+    "credit-agricole.fr", "societegenerale.fr", "labanquepostale.fr", "creditmutuel.fr", "bbva.es", "bancosantander.es", "caixabank.es", "intesasanpaolo.com",
+    "unicredit.it", "ing.nl", "rabobank.nl", "abnamro.nl", "belastingdienst.nl", "pkobp.pl", "mbank.pl", "pekao.com.pl",
+    "ing.pl", "bankier.pl", "itau.com.br", "bradesco.com.br", "bb.com.br", "caixa.gov.br", "nubank.com.br", "mercadopago.com.br",
+    "csob.cz", "kb.cz", "csas.cz", "danskebank.dk", "nordea.dk", "swedbank.se", "seb.se", "handelsbanken.se",
+    "avanza.se", "op.fi", "nordea.fi", "mufg.jp", "sbisec.co.jp", "kbstar.com", "shinhan.com", "kakaobank.com",
+    "toss.im", "upbit.com"
+  ],
+  "news": [
+    "spiegel.de", "zeit.de", "faz.net", "sueddeutsche.de", "welt.de", "bild.de", "tagesschau.de", "zdf.de",
+    "n-tv.de", "focus.de", "stern.de", "t-online.de", "handelsblatt.com", "tagesspiegel.de", "taz.de", "ndr.de",
+    "br.de", "wdr.de", "swr.de", "deutschlandfunk.de", "dw.com", "watson.de", "nzz.ch", "tagesanzeiger.ch",
+    "20min.ch", "blick.ch", "srf.ch", "watson.ch", "derstandard.at", "krone.at", "orf.at", "diepresse.com",
+    "kurier.at", "nytimes.com", "washingtonpost.com", "theguardian.com", "bbc.com", "bbc.co.uk", "cnn.com", "reuters.com",
+    "apnews.com", "bloomberg.com", "wsj.com", "ft.com", "economist.com", "foxnews.com", "politico.com", "aljazeera.com",
+    "dailymail.co.uk", "lemonde.fr", "lefigaro.fr", "liberation.fr", "leparisien.fr", "francetvinfo.fr", "20minutes.fr", "ouest-france.fr",
+    "lepoint.fr", "mediapart.fr", "france24.com", "elpais.com", "elmundo.es", "abc.es", "lavanguardia.com", "20minutos.es",
+    "rtve.es", "corriere.it", "repubblica.it", "lastampa.it", "ilsole24ore.com", "ilfattoquotidiano.it", "nu.nl", "nos.nl",
+    "telegraaf.nl", "ad.nl", "onet.pl", "wp.pl", "interia.pl", "gazeta.pl", "tvn24.pl", "globo.com",
+    "uol.com.br", "cnnbrasil.com.br", "terra.com.br", "idnes.cz", "novinky.cz", "seznamzpravy.cz", "blesk.cz", "dr.dk",
+    "tv2.dk", "politiken.dk", "svt.se", "aftonbladet.se", "expressen.se", "dn.se", "yle.fi", "hs.fi",
+    "iltalehti.fi", "nhk.or.jp", "asahi.com", "yomiuri.co.jp", "nikkei.com", "chosun.com", "joongang.co.kr", "yna.co.kr",
+    "kbs.co.kr"
+  ],
+  "shopping": [
+    "amazon.de", "amazon.com", "amazon.co.uk", "amazon.fr", "amazon.it", "amazon.es", "amazon.nl", "amazon.pl",
+    "amazon.se", "amazon.com.br", "amazon.co.jp", "ebay.de", "ebay.com", "ebay.co.uk", "kleinanzeigen.de", "otto.de",
+    "zalando.de", "zalando.at", "zalando.ch", "zalando.fr", "zalando.pl", "idealo.de", "geizhals.at", "mediamarkt.de",
+    "digitec.ch", "brack.ch", "ricardo.ch", "willhaben.at", "lidl.de", "aldi-sued.de", "kaufland.de", "rewe.de",
+    "edeka.de", "dm.de", "rossmann.de", "ikea.com", "hornbach.de", "obi.de", "bauhaus.info", "tchibo.de",
+    "notebooksbilliger.de", "thomann.de", "thalia.de", "vinted.de", "etsy.com", "aliexpress.com", "temu.com", "hm.com",
+    "zara.com", "decathlon.de", "migros.ch", "coop.ch", "billa.at", "walmart.com", "cdiscount.com", "fnac.com",
+    "darty.com", "leboncoin.fr", "carrefour.fr", "elcorteingles.es", "wallapop.com", "subito.it", "bol.com", "coolblue.nl",
+    "marktplaats.nl", "ah.nl", "kruidvat.nl", "allegro.pl", "olx.pl", "x-kom.pl", "mercadolivre.com.br", "americanas.com.br",
+    "magazineluiza.com.br", "alza.cz", "heureka.cz", "dba.dk", "elgiganten.dk", "blocket.se", "prisjakt.nu", "ica.se",
+    "verkkokauppa.com", "rakuten.co.jp", "mercari.com", "kakaku.com", "coupang.com", "gmarket.co.kr"
+  ],
+  "travel": [
+    "booking.com", "airbnb.com", "expedia.com", "hotels.com", "tripadvisor.com", "trivago.de", "kayak.com", "skyscanner.net",
+    "opodo.de", "holidaycheck.de", "tui.com", "ab-in-den-urlaub.de", "urlaubspiraten.de", "fewo-direkt.de", "hrs.com", "lufthansa.com",
+    "eurowings.com", "condor.com", "ryanair.com", "easyjet.com", "wizzair.com", "swiss.com", "austrian.com", "bahn.de",
+    "sbb.ch", "oebb.at", "flixbus.de", "flixbus.com", "blablacar.de", "sixt.de", "hertz.com", "aida.de",
+    "hotelplan.ch", "kuoni.ch", "getyourguide.com", "omio.com", "united.com", "delta.com", "britishairways.com", "airfrance.fr",
+    "klm.com", "iberia.com", "vueling.com", "lot.com", "flysas.com", "finnair.com", "norwegian.com", "jal.co.jp",
+    "ana.co.jp", "koreanair.com", "latamairlines.com", "voegol.com.br", "decolar.com", "sncf-connect.com", "trenitalia.com", "italotreno.com",
+    "renfe.com", "ns.nl", "intercity.pl", "cd.cz", "regiojet.cz", "dsb.dk", "sj.se", "vr.fi",
+    "jalan.net", "yanolja.com", "agoda.com", "vrbo.com", "lonelyplanet.com", "viator.com", "edreams.com", "logitravel.com",
+    "atrapalo.com", "esky.pl", "invia.cz", "itaka.pl", "ving.se"
+  ],
+  "dating": [
+    "parship.de", "parship.at", "parship.ch", "elitepartner.de", "lovoo.com", "tinder.com", "bumble.com", "hinge.co",
+    "okcupid.com", "match.com", "meetic.fr", "meetic.de", "meetic.it", "meetic.es", "lovescout24.de", "neu.de",
+    "finya.de", "c-date.de", "badoo.com", "pof.com", "zoosk.com", "eharmony.com", "grindr.com", "edarling.de",
+    "edarling.at", "edarling.ch", "silversingles.com", "ourtime.com", "happn.com", "feeld.co", "adopteunmec.com", "lexa.nl",
+    "relatieplanet.nl", "sympatia.pl", "parperfeito.com.br", "ashleymadison.com", "pairs.lv", "omiai-jp.com", "tapple.me", "romeo.com"
+  ],
+  "religion": [
+    "katholisch.de", "ekd.de", "evangelisch.de", "vatican.va", "vaticannews.va", "bibleserver.com", "bible.com", "biblegateway.com",
+    "die-bibel.de", "jw.org", "churchofjesuschrist.org", "kath.net", "domradio.de", "islam.de", "zentralratderjuden.de", "juedische-allgemeine.de",
+    "chabad.org", "quran.com", "islamqa.info", "sunnah.com", "catholic.com", "ewtn.com", "aleteia.org", "la-croix.com",
+    "avvenire.it", "gosc.pl", "opoka.org.pl", "cancaonova.com", "ref.ch", "kath.ch", "katholisch.at", "evang.at",
+    "erf.de", "bibeltv.de", "idea.de", "jesus.de", "islamicfinder.org", "muslimpro.com", "myjewishlearning.com", "sefaria.org",
+    "lionsroar.com", "ditib.de"
+  ],
+  "politics": [
+    "spd.de", "cdu.de", "csu.de", "gruene.de", "fdp.de", "afd.de", "die-linke.de", "bsw-vg.de",
+    "freiewaehler.eu", "volteuropa.org", "die-partei.de", "piratenpartei.de", "abgeordnetenwatch.de", "campact.de", "change.org", "avaaz.org",
+    "openpetition.de", "spoe.at", "oevp.at", "fpoe.at", "gruene.at", "neos.eu", "svp.ch", "sp-ps.ch",
+    "fdp.ch", "gruene.ch", "die-mitte.ch", "democrats.org", "gop.com", "labour.org.uk", "conservatives.com", "libdems.org.uk",
+    "parti-socialiste.fr", "rassemblementnational.fr", "lafranceinsoumise.fr", "parti-renaissance.fr", "psoe.es", "pp.es", "voxespana.es", "partitodemocratico.it",
+    "fratelli-italia.it", "movimento5stelle.it", "vvd.nl", "pvv.nl", "groenlinks.nl", "pis.org.pl", "platforma.org", "konfederacja.pl",
+    "pt.org.br", "ods.cz", "pirati.cz", "socialdemokratiet.dk", "venstre.dk", "socialdemokraterna.se", "moderaterna.se", "sd.se",
+    "sdp.fi", "kokoomus.fi", "perussuomalaiset.fi", "jimin.jp", "theminjoo.kr", "peoplepowerparty.kr"
+  ],
+  "adult": [
+    "pornhub.com", "xvideos.com", "xhamster.com", "xnxx.com", "youporn.com", "redtube.com", "onlyfans.com", "chaturbate.com",
+    "stripchat.com", "livejasmin.com", "brazzers.com", "spankbang.com", "eporner.com", "tnaflix.com", "motherless.com", "beeg.com",
+    "fansly.com", "manyvids.com", "bongacams.com", "cam4.com", "joyclub.de", "poppen.de", "orion.de", "eis.de",
+    "amorelie.de", "lovehoney.com", "fetlife.com", "literotica.com", "adultfriendfinder.com", "rule34.xxx", "e-hentai.org", "nhentai.net",
+    "youjizz.com", "tube8.com", "porn.com", "sex.com", "kaufmich.com", "ladies.de"
+  ],
+  "kids": [
+    "toggo.de", "kika.de", "kindernetz.de", "blinde-kuh.de", "fragfinn.de", "geolino.de", "nick.de", "nick.com",
+    "cartoonnetwork.com", "lego.com", "playmobil.de", "mytoys.de", "sesamstrasse.de", "wdrmaus.de", "pbskids.org", "abcya.com",
+    "coolmathgames.com", "babyone.de", "windeln.de", "eltern.de", "familie.de", "netmoms.de", "babycenter.com", "babycenter.de",
+    "urbia.de", "magicmaman.com", "parents.fr", "serpadres.es", "nostrofiglio.it", "ouders.nl", "dziecisawazne.pl", "alltforforaldrar.se",
+    "vauva.fi", "smyths-toys.com"
+  ],
+  "education": [
+    "wikipedia.org", "wikihow.com", "duden.de", "leo.org", "dict.cc", "pons.com", "linguee.com", "studysmarter.de",
+    "studocu.com", "coursera.org", "udemy.com", "edx.org", "khanacademy.org", "duolingo.com", "babbel.com", "sofatutor.com",
+    "anton.app", "scoyo.de", "serlo.org", "planet-schule.de", "bpb.de", "tum.de", "lmu.de", "uni-heidelberg.de",
+    "fu-berlin.de", "hu-berlin.de", "rwth-aachen.de", "kit.edu", "ethz.ch", "uzh.ch", "epfl.ch", "univie.ac.at",
+    "fernuni-hagen.de", "iu.de", "chegg.com", "quizlet.com", "brainly.com", "scribbr.de", "researchgate.net", "jstor.org",
+    "mit.edu", "harvard.edu", "stanford.edu", "ox.ac.uk", "cam.ac.uk", "britannica.com", "merriam-webster.com", "dictionary.com",
+    "cambridge.org", "larousse.fr", "wordreference.com", "rae.es", "treccani.it", "skuola.net", "brainly.pl", "todamateria.com.br",
+    "ordnet.dk", "lex.dk", "svenska.se", "weblio.jp", "namu.wiki", "preply.com", "codecademy.com", "freecodecamp.org",
+    "w3schools.com", "wolframalpha.com", "geogebra.org", "kahoot.com"
+  ],
+  "sports": [
+    "kicker.de", "sport1.de", "sportschau.de", "transfermarkt.de", "transfermarkt.com", "fussball.de", "dfb.de", "bundesliga.com",
+    "fcbayern.com", "bvb.de", "schalke04.de", "laola1.at", "spox.com", "dazn.com", "onefootball.com", "flashscore.de",
+    "flashscore.com", "sofascore.com", "eurosport.de", "eurosport.com", "motorsport-total.com", "espn.com", "nba.com", "nfl.com",
+    "uefa.com", "fifa.com", "olympics.com", "formula1.com", "skysports.com", "goal.com", "marca.com", "as.com",
+    "mundodeportivo.com", "gazzetta.it", "calciomercato.com", "lequipe.fr", "sport.pl", "meczyki.pl", "lance.com.br", "sport.cz",
+    "bold.dk", "fotbollskanalen.se", "jatkoaika.com", "nikkansports.com", "gekisaka.jp", "strava.com", "komoot.com", "outdooractive.com",
+    "sportscheck.com", "ufc.com", "atptour.com"
+  ],
+  "entertainment": [
+    "youtube.com", "netflix.com", "disneyplus.com", "disney.com", "primevideo.com", "joyn.de", "rtl.de", "prosieben.de",
+    "sat1.de", "ardmediathek.de", "arte.tv", "sky.de", "spotify.com", "deezer.com", "soundcloud.com", "imdb.com",
+    "moviepilot.de", "filmstarts.de", "kino.de", "eventim.de", "ticketmaster.de", "ticketmaster.com", "gala.de", "bunte.de",
+    "tvspielfilm.de", "audible.de", "storytel.com", "wattpad.com", "webtoons.com", "crunchyroll.com", "hulu.com", "max.com",
+    "paramountplus.com", "myanimelist.net", "goodreads.com", "tunein.com", "vimeo.com", "dailymotion.com", "allocine.fr", "canalplus.com",
+    "france.tv", "tf1.fr", "atresplayer.com", "raiplay.it", "npo.nl", "videoland.com", "cda.pl", "filmweb.pl",
+    "csfd.cz", "viaplay.com", "svtplay.se", "abema.tv", "tver.jp", "nicovideo.jp", "tving.com", "melon.com",
+    "bandcamp.com", "genius.com"
+  ],
+  "social": [
+    "facebook.com", "instagram.com", "x.com", "twitter.com", "tiktok.com", "reddit.com", "linkedin.com", "pinterest.com",
+    "snapchat.com", "tumblr.com", "threads.net", "threads.com", "bsky.app", "mastodon.social", "discord.com", "telegram.org",
+    "whatsapp.com", "quora.com", "vk.com", "weibo.com", "line.me", "mixi.jp", "ameblo.jp", "note.com",
+    "hatena.ne.jp", "gutefrage.net", "medium.com", "substack.com", "flickr.com", "deviantart.com", "wykop.pl", "forocoches.com",
+    "meetup.com", "nextdoor.com", "bereal.com", "signal.org", "kakao.com"
+  ],
+  "gaming": [
+    "steampowered.com", "steamcommunity.com", "epicgames.com", "ea.com", "ubisoft.com", "blizzard.com", "battle.net", "riotgames.com",
+    "leagueoflegends.com", "playstation.com", "xbox.com", "nintendo.com", "nintendo.de", "gog.com", "itch.io", "roblox.com",
+    "minecraft.net", "chess.com", "lichess.org", "gamestar.de", "pcgames.de", "gamepro.de", "ign.com", "gamespot.com",
+    "polygon.com", "kotaku.com", "eurogamer.net", "mein-mmo.de", "jeuxvideo.com", "3djuegos.com", "multiplayer.it", "gry-online.pl",
+    "4gamer.net", "famitsu.com", "inven.co.kr", "ruliweb.com", "instant-gaming.com", "g2a.com", "poki.com", "crazygames.com",
+    "nexusmods.com", "op.gg", "hltv.org", "twitch.tv"
+  ],
+  "food": [
+    "chefkoch.de", "lecker.de", "essen-und-trinken.de", "eatsmarter.de", "einfachbacken.de", "gutekueche.at", "ichkoche.at", "hellofresh.de",
+    "hellofresh.com", "lieferando.de", "lieferando.at", "wolt.com", "ubereats.com", "deliveroo.co.uk", "just-eat.co.uk", "thuisbezorgd.nl",
+    "pyszne.pl", "takeaway.com", "doordash.com", "glovoapp.com", "foodora.at", "mcdonalds.com", "starbucks.com", "allrecipes.com",
+    "foodnetwork.com", "bonappetit.com", "tasty.co", "delish.com", "bbcgoodfood.com", "marmiton.org", "750g.com", "recetasgratis.net",
+    "giallozafferano.it", "cucchiaio.it", "leukerecepten.nl", "kwestiasmaku.com", "aniagotuje.pl", "ifood.com.br", "tudogostoso.com.br", "toprecepty.cz",
+    "valdemarsro.dk", "koket.se", "kotikokki.net", "cookpad.com", "kurashiru.com", "tabelog.com", "10000recipe.com", "baemin.com",
+    "opentable.com", "thefork.com", "yelp.com", "falstaff.com", "vivino.com", "bettybossi.ch", "fooby.ch", "kitchenstories.com",
+    "allerhande.nl"
+  ],
+  "real-estate": [
+    "immobilienscout24.de", "immowelt.de", "immonet.de", "wg-gesucht.de", "homegate.ch", "immoscout24.ch", "immobilienscout24.at", "wohnungsboerse.net",
+    "engelvoelkers.com", "vonovia.de", "zillow.com", "realtor.com", "redfin.com", "rightmove.co.uk", "zoopla.co.uk", "seloger.com",
+    "pap.fr", "bienici.com", "idealista.com", "idealista.it", "idealista.pt", "fotocasa.es", "immobiliare.it", "casa.it",
+    "funda.nl", "pararius.nl", "otodom.pl", "zapimoveis.com.br", "quintoandar.com.br", "sreality.cz", "bezrealitky.cz", "boligsiden.dk",
+    "home.dk", "hemnet.se", "etuovi.com", "oikotie.fi", "suumo.jp", "zigbang.com"
+  ],
+  "cars": [
+    "mobile.de", "autoscout24.de", "autoscout24.at", "autoscout24.ch", "autoscout24.com", "autoscout24.it", "auto-motor-und-sport.de", "autobild.de",
+    "adac.de", "oeamtc.at", "tcs.ch", "motor-talk.de", "carwow.co.uk", "autohero.com", "bmw.de", "mercedes-benz.de",
+    "volkswagen.de", "vw.com", "audi.de", "porsche.com", "opel.de", "ford.de", "tesla.com", "autodoc.de",
+    "kfzteile24.de", "atu.de", "1000ps.de", "cars.com", "autotrader.com", "autotrader.co.uk", "kbb.com", "caranddriver.com",
+    "topgear.com", "lacentrale.fr", "caradisiac.com", "coches.net", "quattroruote.it", "autoweek.nl", "anwb.nl", "otomoto.pl",
+    "webmotors.com.br", "sauto.cz", "bilbasen.dk", "fdm.dk", "nettiauto.com", "carsensor.net", "bobaedream.co.kr", "encar.com"
+  ],
+  "tech": [
+    "heise.de", "golem.de", "chip.de", "t3n.de", "computerbase.de", "pcgameshardware.de", "stackoverflow.com", "github.com",
+    "gitlab.com", "techcrunch.com", "theverge.com", "wired.com", "arstechnica.com", "cnet.com", "tomshardware.com", "ycombinator.com",
+    "apple.com", "microsoft.com", "samsung.com", "telekom.de", "vodafone.de", "swisscom.ch", "numerama.com", "xataka.com",
+    "tweakers.net", "tecmundo.com.br", "qiita.com", "openai.com", "chatgpt.com", "anthropic.com", "claude.ai", "deepl.com"
+  ]
+}

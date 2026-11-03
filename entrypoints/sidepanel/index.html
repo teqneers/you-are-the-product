@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Safari has no side panel or sidebar for extensions. -->
+    <meta name="manifest.exclude" content="['safari']" />
+    <!-- Firefox: no built-in extension styles, they turn the text dark on our dark background. -->
+    <meta name="manifest.browser_style" content="false" />
+    <!-- Icon of the sidebar in Firefox's sidebar launcher (otherwise a puzzle piece). -->
+    <meta name="manifest.default_icon" content='{ "16": "/icon/16.png", "32": "/icon/32.png", "48": "/icon/48.png" }' />
+    <title>You Are The Product</title>
+    <link rel="icon" href="/icon/32.png" />
+  </head>
+  <body>
+    <nav class="switch">
+      <button data-view="list" class="active" data-i18n="panel.thisPage"></button>
+      <button data-view="graph" data-i18n="panel.graph"></button>
+      <button id="reset" class="icon" data-i18n-title="common.deleteAll">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14M10 11v6M14 11v6" />
+        </svg>
+      </button>
+    </nav>
+    <main id="list-view">
+      <div class="live" id="live"></div>
+    </main>
+    <section id="graph-view" hidden>
+      <p class="muted" id="graph-summary"></p>
+      <div class="graph-wrap"><svg id="graph"></svg></div>
+    </section>
+    <footer>
+      <button id="open" data-i18n="common.openOverview"></button>
+      <span id="language"></span>
+    </footer>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

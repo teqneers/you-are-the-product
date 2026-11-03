@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You Are The Product – logo concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --line: #2a2f3a;
+    --text: #e8eaf0;
+    --muted: #8a92a6;
+    --site: #4ea1ff;
+    --tracker: #ff4d5e;
+    --unknown: #f5a524;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+  main { max-width: 1200px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font: 700 40px/1.1 'Space Grotesk', system-ui, sans-serif; margin: 0 0 12px; }
+  h1 b { color: var(--tracker); }
+  .intro { color: var(--muted); max-width: 720px; margin: 0 0 48px; }
+  .intro code { color: var(--text); }
+
+  /* Mark colour tokens: every panel sets --ink (neutral) and --acc (accent). */
+  .dark  { --ink: #e8eaf0; --acc: #ff4d5e; background: #0f1115; color: #e8eaf0; }
+  .panel { --ink: #e8eaf0; --acc: #ff4d5e; background: #171a21; color: #e8eaf0; }
+  .light { --ink: #0f1115; --acc: #ff4d5e; background: #ffffff; color: #0f1115; }
+  .paper { --ink: #0f1115; --acc: #ff4d5e; background: #f3f1ec; color: #0f1115; }
+  .i  { fill: var(--ink); }
+  .a  { fill: var(--acc); }
+  .ar { fill: var(--acc); stroke: var(--acc); }
+  .is { fill: none; stroke: var(--ink); }
+  .as { fill: none; stroke: var(--acc); }
+
+  section.concept {
+    border-top: 1px solid var(--line);
+    padding: 48px 0 56px;
+  }
+  .head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+  .num { font: 700 14px/1 'Space Grotesk', sans-serif; color: var(--tracker); letter-spacing: .1em; }
+  h2 { font: 700 30px/1.15 'Space Grotesk', system-ui, sans-serif; margin: 0; }
+  .file { font: 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); }
+
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 16px; }
+  .card { border-radius: 16px; padding: 32px; border: 1px solid var(--line); }
+  .light.card, .paper.card { border-color: #dcdfe6; }
+  .hero { display: grid; place-items: center; min-height: 400px; }
+  .hero svg { width: 320px; height: 320px; max-width: 100%; }
+
+  .lockup { display: flex; align-items: center; gap: 20px; min-height: 160px; }
+  .lockup svg { width: 88px; height: 88px; flex: none; }
+  .word { font: 700 34px/1.05 'Space Grotesk', system-ui, sans-serif; letter-spacing: -.01em; }
+  .word span { display: block; font-weight: 400; font-size: 18px; letter-spacing: .14em; text-transform: uppercase; opacity: .75; margin-bottom: 4px; }
+  .word em { font-style: normal; color: var(--acc); }
+
+  .sizes { display: flex; align-items: flex-end; gap: 28px; flex-wrap: wrap; }
+  .size { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .size small { font: 11px/1 ui-monospace, Menlo, monospace; opacity: .6; }
+  .size svg { display: block; }
+  .toolbar { display: flex; gap: 10px; align-items: center; padding: 6px 10px; border-radius: 8px; }
+  .dark .toolbar  { background: #2a2d34; }
+  .light .toolbar { background: #e9ebef; }
+  .dot { width: 16px; height: 16px; border-radius: 4px; background: currentColor; opacity: .18; }
+  .tile { --ink: #e8eaf0; background: #0f1115; border-radius: 28px; padding: 18px; }
+  .tile svg { width: 92px; height: 92px; }
+
+  .text { display: grid; grid-template-columns: 2fr 1fr; gap: 32px; margin-top: 8px; }
+  .text p { margin: 0; }
+  .text h3 { font: 500 12px/1 'Space Grotesk', sans-serif; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 0 0 10px; }
+  .shine { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: 13px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); }
+  .tag.best { border-color: var(--tracker); color: #fff; }
+  @media (max-width: 760px) { .text { grid-template-columns: 1fr; } .word { font-size: 26px; } }
+
+  .notes { border-top: 1px solid var(--line); padding-top: 40px; color: var(--muted); max-width: 820px; }
+  .notes h2 { color: var(--text); margin-bottom: 12px; }
+  .notes li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>You Are The <b>Product</b> — logo concepts</h1>
+  <p class="intro">
+    Six directions for the browser extension that shows, live while you browse, which companies follow you.
+    Every mark is drawn on a 128&times;128 grid with bold shapes and at most two colours:
+    <code>ink</code> (light <code>#e8eaf0</code> on dark, near-black <code>#0f1115</code> on light) and the tracker red
+    <code>#ff4d5e</code> from <code>lib/theme.css</code>. Each concept is shown large, as a lockup, at the toolbar sizes
+    16/32/48/128&nbsp;px and on dark and light backgrounds. The standalone SVGs in this folder switch their ink colour with
+    <code>prefers-color-scheme</code>.
+  </p>
+  <div id="concepts"></div>
+
+  <div class="notes">
+    <h2>Notes for picking</h2>
+    <ul>
+      <li><b>Most legible at 16&nbsp;px:</b> 1 Tagged, 4 Crosshair, 3 In the Cart. They keep one big silhouette and one accent.</li>
+      <li><b>Most "eye-opening" for a classroom:</b> 1 Tagged and 6 Sold — the joke lands instantly, even for twelve-year-olds.</li>
+      <li><b>Most "tech / data" flavoured:</b> 2 Network Eye and 5 Scanned — good for the website hero, weaker as a 16&nbsp;px icon.</li>
+      <li>Concepts can be combined: e.g. the 1 Tagged mark as toolbar icon, with the 5 Scanned illustration as a hero graphic.</li>
+      <li>The red stays the same on light backgrounds (contrast to white about 3.2:1, enough for non-text graphics).
+        If a stronger contrast is needed on white, <code>#e5384a</code> is a safe darker sibling.</li>
+    </ul>
+  </div>
+</main>
+
+<noscript><p style="padding:24px">This page builds its previews with a small inline script. Please enable JavaScript.</p></noscript>
+
+<script>
+// Mark artwork (128x128 grid). Classes: i = ink fill, a = accent fill, ar = accent fill+stroke,
+// is = ink stroke, as = accent stroke. Colours come from --ink / --acc on the surrounding panel.
+const MARKS = {
+  tagged: `
+    <g transform="rotate(-18 64 64)">
+      <path class="ar" stroke-width="8" stroke-linejoin="round" fill-rule="evenodd"
+        d="M30 50 L64 14 L98 50 V108 a8 8 0 0 1 -8 8 H38 a8 8 0 0 1 -8 -8 Z M55 38 a9 9 0 1 0 18 0 a9 9 0 1 0 -18 0 Z"/>
+      <circle class="i" cx="64" cy="71" r="12"/>
+      <path class="i" d="M42 108 C42 95 52 89 64 89 C76 89 86 95 86 108 Z"/>
+    </g>`,
+  'network-eye': `
+    <g class="as" stroke-width="3" opacity=".55">
+      <path d="M64 64 L10 64 M64 64 L40 34 M64 64 L88 34 M64 64 L118 64 M64 64 L88 94 M64 64 L40 94"/>
+    </g>
+    <path class="is" stroke-width="8" stroke-linejoin="round" d="M10 64 L40 34 H88 L118 64 L88 94 H40 Z"/>
+    <g class="i">
+      <circle cx="10" cy="64" r="9"/><circle cx="40" cy="34" r="10"/><circle cx="88" cy="34" r="10"/>
+      <circle cx="118" cy="64" r="9"/><circle cx="88" cy="94" r="10"/><circle cx="40" cy="94" r="10"/>
+    </g>
+    <path class="a" fill-rule="evenodd" d="M40 64 a24 24 0 1 0 48 0 a24 24 0 1 0 -48 0 Z M54 64 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+    <circle class="i" cx="64" cy="64" r="4.5"/>`,
+  'in-the-cart': `
+    <g class="a">
+      <circle cx="72" cy="26" r="13"/>
+      <path d="M50 86 V70 C50 58 60 52 72 52 C84 52 94 58 94 70 V86 Z"/>
+    </g>
+    <path class="is" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M6 24 H20 L33 86 H104 L116 50 H28"/>
+    <circle class="i" cx="44" cy="106" r="9"/>
+    <circle class="i" cx="96" cy="106" r="9"/>`,
+  crosshair: `
+    <circle class="as" cx="64" cy="64" r="42" stroke-width="10"/>
+    <path class="as" stroke-width="10" d="M64 2 V20 M64 108 V126 M2 64 H20 M108 64 H126"/>
+    <path class="i" style="stroke:var(--ink)" stroke-width="4" stroke-linejoin="round"
+      d="M60 56 V90 L68 83 L74 96 L81 93 L75 80 L86 80 Z"/>`,
+  scanned: `
+    <g clip-path="url(#yatp-clip-scanned)" class="i">
+      <rect x="14" y="0" width="10" height="128"/><rect x="28" y="0" width="5" height="128"/>
+      <rect x="37" y="0" width="12" height="128"/><rect x="53" y="0" width="5" height="128"/>
+      <rect x="62" y="0" width="9" height="128"/><rect x="75" y="0" width="5" height="128"/>
+      <rect x="84" y="0" width="13" height="128"/><rect x="101" y="0" width="5" height="128"/>
+      <rect x="110" y="0" width="4" height="128"/>
+    </g>
+    <rect class="a" x="4" y="42" width="120" height="8" rx="4"/>`,
+  sold: `
+    <g transform="rotate(-14 64 64)">
+      <circle class="as" cx="64" cy="64" r="56" stroke-width="7"/>
+      <circle class="as" cx="64" cy="64" r="47" stroke-width="3"/>
+      <circle class="a" cx="64" cy="34" r="13"/>
+      <path class="a" d="M36 96 C36 70 48 54 64 54 C80 54 92 70 92 96 Z"/>
+      <rect class="a" x="12" y="72" width="104" height="26" rx="3"/>
+      <g class="is" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 13)">
+        <path d="M41 66 C39 64 36 64 33 64 C29 64 27 66 27 68 C27 71 30 72 34 72 C38 72 41 73 41 76 C41 79 38 80 34 80 C31 80 28 79 27 77"/>
+        <ellipse cx="54" cy="72" rx="7" ry="8"/>
+        <path d="M67 64 V80 H79"/>
+        <path d="M86 64 V80 H91 C97 80 101 77 101 72 C101 67 97 64 91 64 Z"/>
+      </g>
+    </g>`
+};
+
+// Shared defs (clip paths) used by the marks above.
+const DEFS = `<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <clipPath id="yatp-clip-scanned">
+    <circle cx="64" cy="38" r="25"/>
+    <path d="M14 124 C14 90 36 72 64 72 C92 72 114 90 114 124 Z"/>
+  </clipPath>
+</defs></svg>`;
+
+const CONCEPTS = [
+  { slug: 'tagged', name: 'Tagged',
+    idea: 'A price tag with a person cut into it: you are the item on the shelf. The evolution of the current draft, but the eye is replaced by a person, so the message is "you are for sale" instead of "you are watched".',
+    shine: ['Toolbar icon', 'Store tile', 'Sticker'], best: 'Toolbar icon' },
+  { slug: 'network-eye', name: 'Network Eye',
+    idea: 'An eye whose outline is a network of nodes and connections, with a red iris at the centre of all the lines. It is the tracker network looking back at you — and the same node look as the graph inside the extension.',
+    shine: ['Website hero', 'Animated splash', 'Slides'], best: 'Website hero' },
+  { slug: 'in-the-cart', name: 'In the Cart',
+    idea: 'A shopping cart, and the thing being bought is a person. Instantly readable for kids and adults, a little absurd, and clearly about commerce rather than horror.',
+    shine: ['Sticker', 'Classroom worksheet', 'Toolbar icon'], best: 'Sticker' },
+  { slug: 'crosshair', name: 'Crosshair Cursor',
+    idea: 'Your mouse pointer, caught in a target reticle. The cursor stands for you on the web; the reticle stands for targeted advertising. Very bold, very simple.',
+    shine: ['Toolbar icon', 'Favicon', 'Badge with counter'], best: 'Toolbar icon' },
+  { slug: 'scanned', name: 'Scanned',
+    idea: 'A head-and-shoulders silhouette made of barcode bars, crossed by a red scanner line: a person turned into a product code at checkout. Strong graphic poster look.',
+    shine: ['Website hero', 'Poster', 'T-shirt'], best: 'Website hero' },
+  { slug: 'sold', name: 'Sold',
+    idea: 'A rubber stamp with a person and a "SOLD" band across the chest. The most provocative concept: it states the outcome. At 16 px the band reads as a simple red bar.',
+    shine: ['Sticker', 'Store tile', 'Social preview image'], best: 'Sticker' }
+];
+
+function svg(slug, size, label) {
+  const a = label ? `role="img" aria-label="${label}"` : 'aria-hidden="true"';
+  return `<svg viewBox="0 0 128 128" width="${size}" height="${size}" ${a}>${MARKS[slug]}</svg>`;
+}
+
+function lockup(slug, cls) {
+  return `<div class="card ${cls} lockup">${svg(slug, 88)}
+    <div class="word"><span>You Are The</span><em>Product</em></div></div>`;
+}
+
+function sizes(slug, cls) {
+  const row = [16, 32, 48, 128].map(s =>
+    `<div class="size">${svg(slug, s)}<small>${s}px</small></div>`).join('');
+  const toolbar = `<div class="size"><div class="toolbar"><span class="dot"></span>${svg(slug, 16)}<span class="dot"></span></div><small>in a toolbar</small></div>`;
+  const tile = cls === 'dark'
+    ? `<div class="size"><div class="tile">${svg(slug, 92)}</div><small>store tile</small></div>` : '';
+  return `<div class="card ${cls}"><div class="sizes">${row}${toolbar}${tile}</div></div>`;
+}
+
+document.body.insertAdjacentHTML('afterbegin', DEFS);
+document.getElementById('concepts').innerHTML = CONCEPTS.map((c, n) => `
+  <section class="concept" id="${c.slug}">
+    <div class="head">
+      <span class="num">CONCEPT ${n + 1}</span>
+      <h2>${c.name}</h2>
+      <span class="file">logo-${n + 1}-${c.slug}.svg</span>
+    </div>
+    <div class="grid2">
+      <div class="card dark hero">${svg(c.slug, 320, c.name + ' logo on dark background')}</div>
+      <div class="card light hero">${svg(c.slug, 320, c.name + ' logo on light background')}</div>
+    </div>
+    <div class="grid2">${lockup(c.slug, 'dark')}${lockup(c.slug, 'paper')}</div>
+    <div class="grid2">${sizes(c.slug, 'dark')}${sizes(c.slug, 'light')}</div>
+    <div class="text">
+      <div><h3>Idea</h3><p>${c.idea}</p></div>
+      <div><h3>Where it shines</h3><div class="shine">${c.shine.map(s =>
+        `<span class="tag${s === c.best ? ' best' : ''}">${s}</span>`).join('')}</div></div>
+    </div>
+  </section>`).join('');
+</script>
+</body>
+</html>

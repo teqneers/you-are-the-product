@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- "In the Cart": a shopping cart, and the thing being bought is a person. -->
+  <rect width="128" height="128" rx="28" fill="#0f1115"/>
+  <g transform="translate(13 12) scale(0.8)">
+    <g fill="#ff4d5e">
+      <circle cx="72" cy="26" r="13"/>
+      <path d="M50 86 V70 C50 58 60 52 72 52 C84 52 94 58 94 70 V86 Z"/>
+    </g>
+    <path fill="none" stroke="#e8eaf0" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" d="M6 24 H20 L33 86 H104 L116 50 H28"/>
+    <circle fill="#e8eaf0" cx="44" cy="106" r="10"/>
+    <circle fill="#e8eaf0" cx="96" cy="106" r="10"/>
+  </g>
+</svg>

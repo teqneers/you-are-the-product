@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You Are The Product</title>
+    <link rel="icon" href="/icon/32.png" />
+  </head>
+  <body>
+    <aside>
+      <h1><img class="logo" src="/icon/96.png" alt="" width="32" height="32" />You Are The Product</h1>
+      <p class="headline" id="headline" data-i18n="dash.empty"></p>
+      <div class="toggle">
+        <label><input type="radio" name="group" value="company" checked /> <span data-i18n="dash.companies"></span></label>
+        <label><input type="radio" name="group" value="domain" /> <span data-i18n="dash.domains"></span></label>
+      </div>
+      <div id="infra"></div>
+      <section id="profile" hidden>
+        <button id="profile-close" class="close" data-i18n-title="profile.close">×</button>
+        <h2 id="profile-title"></h2>
+        <div id="profile-week"></div>
+        <p class="muted small" id="profile-text"></p>
+        <ul id="profile-list"></ul>
+      </section>
+      <p class="muted small" data-i18n="profile.hint"></p>
+      <h2 data-i18n="dash.topTitle"></h2>
+      <ol id="top"></ol>
+      <div class="actions">
+        <button id="export" data-i18n="dash.export"></button>
+        <button id="present" data-i18n="dash.present"></button>
+        <button id="reset" data-i18n="common.deleteAll"></button>
+        <span id="language"></span>
+      </div>
+      <p class="muted small">
+        <span data-i18n="dash.footer"></span>
+        <a href="https://github.com/duckduckgo/tracker-blocklists">DuckDuckGo Tracker Blocklists</a>,
+        CC BY-NC-SA 4.0.
+      </p>
+    </aside>
+    <div class="graph-wrap">
+      <p class="present-headline" id="present-headline"></p>
+      <svg id="graph"></svg>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

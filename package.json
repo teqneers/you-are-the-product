@@ -1,0 +1,52 @@
+{
+  "name": "you-are-the-product",
+  "description": "Shows live which companies follow you while you browse.",
+  "version": "0.1.0",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/teqneers/you-are-the-product",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teqneers/you-are-the-product.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teqneers/you-are-the-product/issues",
+    "email": "you-are-the-product@teqneers.de"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "trackers": "node scripts/build-trackers.mjs",
+    "reach": "node scripts/build-reach.mjs",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare",
+    "logos": "node scripts/build-logos.mjs",
+    "brokers": "node scripts/build-brokers.mjs",
+    "geo": "node scripts/build-geo.mjs",
+    "test": "vitest run",
+    "build:safari": "wxt build -b safari --mv3",
+    "xcode:safari": "npm run build:safari && xcodebuild -project 'safari/You Are The Product/You Are The Product.xcodeproj' -scheme 'You Are The Product' -configuration Release build",
+    "icons": "node scripts/build-icons.mjs",
+    "vendors": "node scripts/build-vendor-names.mjs"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "decode-ico": "^0.4.1",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0",
+    "wxt": "^0.21.5"
+  },
+  "dependencies": {
+    "d3": "^7.9.0",
+    "tldts": "^7.4.19"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

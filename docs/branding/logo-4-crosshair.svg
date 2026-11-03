@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Concept 4 "Crosshair Cursor": your mouse pointer caught in a target reticle. -->
+  <style>
+    .i{fill:#0f1115;stroke:#0f1115}.as{fill:none;stroke:#ff4d5e}
+    @media (prefers-color-scheme:dark){.i{fill:#e8eaf0;stroke:#e8eaf0}}
+  </style>
+  <circle class="as" cx="64" cy="64" r="42" stroke-width="10"/>
+  <path class="as" stroke-width="10" d="M64 2 V20 M64 108 V126 M2 64 H20 M108 64 H126"/>
+  <path class="i" stroke-width="4" stroke-linejoin="round" d="M60 56 V90 L68 83 L74 96 L81 93 L75 80 L86 80 Z"/>
+</svg>

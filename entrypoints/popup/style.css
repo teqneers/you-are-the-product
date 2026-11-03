@@ -1,0 +1,10 @@
+main {
+  width: 340px;
+  padding: 16px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

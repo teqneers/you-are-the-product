@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Concept 5 "Scanned": a person made of barcode bars, crossed by a red scanner line. -->
+  <style>
+    .i{fill:#0f1115}.a{fill:#ff4d5e}
+    @media (prefers-color-scheme:dark){.i{fill:#e8eaf0}}
+  </style>
+  <defs>
+    <clipPath id="person">
+      <circle cx="64" cy="38" r="25"/>
+      <path d="M14 124 C14 90 36 72 64 72 C92 72 114 90 114 124 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#person)" class="i">
+    <rect x="14" y="0" width="10" height="128"/><rect x="28" y="0" width="5" height="128"/>
+    <rect x="37" y="0" width="12" height="128"/><rect x="53" y="0" width="5" height="128"/>
+    <rect x="62" y="0" width="9" height="128"/><rect x="75" y="0" width="5" height="128"/>
+    <rect x="84" y="0" width="13" height="128"/><rect x="101" y="0" width="5" height="128"/>
+    <rect x="110" y="0" width="4" height="128"/>
+  </g>
+  <rect class="a" x="4" y="42" width="120" height="8" rx="4"/>
+</svg>

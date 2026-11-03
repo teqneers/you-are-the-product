@@ -1,0 +1,415 @@
+{
+  "sources": [
+    {
+      "registry": "CA",
+      "url": "https://cppa.ca.gov/data_broker_registry/",
+      "fetched": "2026-11-03"
+    },
+    {
+      "registry": "OR",
+      "url": "https://dfr.oregon.gov/business/licensing/data-broker-registry/",
+      "fetched": "2026-11-03"
+    }
+  ],
+  "companies": {
+    "33Across": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "33Across, Inc."
+    },
+    "6 Sense Insights": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "6sense Insights, Inc."
+    },
+    "Adagio": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Onfocus SAS"
+    },
+    "Adelphic": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Viant US LLC"
+    },
+    "APIHub": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "HubSpot, Inc."
+    },
+    "AppLovin": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "AppLovin Corporation"
+    },
+    "Audigent": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Predictive Pop, Inc."
+    },
+    "Beeswax": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Beeswax"
+    },
+    "Blis": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "BLIS USA, INC."
+    },
+    "Bombora": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Bombora, Inc."
+    },
+    "Claritas": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Claritas LLC"
+    },
+    "claritas.com": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Claritas LLC"
+    },
+    "Clickagy": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Clickagy LLC"
+    },
+    "comScore": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Comscore, Inc"
+    },
+    "Connatix": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Connatix Native Exchange Inc."
+    },
+    "Criteo": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Criteo Corp."
+    },
+    "Demandbase": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Demandbase, Inc."
+    },
+    "Disqus": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Disqus"
+    },
+    "Dstillery": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Dstillery, Inc."
+    },
+    "eyeota": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Eyeota Pte Ltd"
+    },
+    "FreeWheel": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "FreeWheel Media Inc"
+    },
+    "getelevar.com": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Elevar, LLC"
+    },
+    "HubSpot": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "HubSpot, Inc."
+    },
+    "ID5": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "ID5 Technology Ltd"
+    },
+    "Index Exchange": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Index Exchange Inc."
+    },
+    "iSpot.tv": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "iSpot.tv, Inc."
+    },
+    "J2 Global": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "J2 Global Canada Inc."
+    },
+    "Kargo": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Kargo Global LLC"
+    },
+    "Lead Intelligence": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Lead Intelligence Inc."
+    },
+    "LiveIntent": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "LiveIntent"
+    },
+    "LiveRamp": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "LiveRamp Holdings, Inc."
+    },
+    "Magnite": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Magnite Inc"
+    },
+    "MaxMind": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "MaxMind, Inc."
+    },
+    "Media.net Advertising": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Media.net Advertising FZ, LLC"
+    },
+    "Merkle": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Merkle Inc."
+    },
+    "Ogury": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Ogury Ltd"
+    },
+    "OnAudience": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "ONAUDIENCE LTD"
+    },
+    "OpenX": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "OpenX Technologies, Inc."
+    },
+    "optable.co": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Optable Technologies US Inc."
+    },
+    "Outbrain": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Teads Holding Co"
+    },
+    "PubMatic": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "PubMatic Inc."
+    },
+    "Pulsepoint": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "PulsePoint, Inc."
+    },
+    "RELX Group": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "RELX Inc."
+    },
+    "Resonate Networks": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Resonate"
+    },
+    "RevContent": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "RevContent, LLC"
+    },
+    "Roq.ad": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Roq.ad Inc."
+    },
+    "Semasio": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Semasio GmbH"
+    },
+    "ShareThis": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Predactiv"
+    },
+    "Sharethrough": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Sharethrough"
+    },
+    "Sojern": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Sojern, Inc"
+    },
+    "Sovrn Holdings": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Sovrn, Inc."
+    },
+    "Taboola": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Taboola, Inc."
+    },
+    "Tapad": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Tapad"
+    },
+    "Teads": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Teads Inc"
+    },
+    "The Nielsen Company": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "The Nielsen Company, LLC"
+    },
+    "Throtle": {
+      "registries": [
+        "OR"
+      ],
+      "registeredAs": "THROTLE INC"
+    },
+    "TransUnion": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Trans Union LLC"
+    },
+    "TripleLift": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "TripleLift, Inc."
+    },
+    "Valassis Digital": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Valassis Communications, Inc."
+    },
+    "VRTCAL Markets": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "VRTCAL Markets Inc."
+    },
+    "YieldMo": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "Yieldmo, Inc."
+    },
+    "Zeta Global": {
+      "registries": [
+        "CA",
+        "OR"
+      ],
+      "registeredAs": "Zeta Global"
+    },
+    "Zoom Information": {
+      "registries": [
+        "CA"
+      ],
+      "registeredAs": "ZoomInfo Technologies, LLC"
+    }
+  }
+}

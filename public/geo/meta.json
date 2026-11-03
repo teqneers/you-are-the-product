@@ -1,0 +1,13 @@
+{
+  "source": "DB-IP IP to Country Lite",
+  "sourceUrl": "https://db-ip.com/db/download/ip-to-country-lite",
+  "file": "https://download.db-ip.com/free/dbip-country-lite-2026-11.csv.gz",
+  "month": "2026-11",
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "IP Geolocation by DB-IP",
+  "attributionUrl": "https://db-ip.com",
+  "attributionHtml": "<a href='https://db-ip.com'>IP Geolocation by DB-IP</a>",
+  "v4Ranges": 362998,
+  "v6Ranges": 369662
+}

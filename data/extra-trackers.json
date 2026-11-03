@@ -1,0 +1,150 @@
+{
+  "_comment": "Companies common on German sites but missing from the DuckDuckGo list, plus infrastructure domains. Domains already in that list keep their DuckDuckGo company and category. Run `npm run trackers` after editing.",
+  "companies": [
+    {
+      "name": "INFOnline",
+      "home": "infonline.de",
+      "categories": [
+        "Audience Measurement"
+      ],
+      "domains": [
+        "ioam.de",
+        "infonline.de"
+      ]
+    },
+    {
+      "name": "Ströer",
+      "home": "stroeer.de",
+      "categories": [
+        "Advertising"
+      ],
+      "domains": [
+        "stroeer.de",
+        "stroeerws.de",
+        "adscale.de"
+      ]
+    },
+    {
+      "name": "emetriq",
+      "home": "emetriq.com",
+      "categories": [
+        "Advertising"
+      ],
+      "domains": [
+        "emetriq.de",
+        "emetriq.com",
+        "xplosion.de"
+      ]
+    },
+    {
+      "name": "Ad Up Technology",
+      "home": "adup-tech.com",
+      "categories": [
+        "Advertising"
+      ],
+      "domains": [
+        "adup-tech.com"
+      ]
+    },
+    {
+      "name": "The ADEX",
+      "home": "theadex.com",
+      "categories": [
+        "Advertising"
+      ],
+      "domains": [
+        "theadex.com"
+      ]
+    },
+    {
+      "name": "netID",
+      "home": "netid.de",
+      "categories": [
+        "Identity"
+      ],
+      "domains": [
+        "netid.de"
+      ]
+    },
+    {
+      "name": "Otto Group",
+      "home": "otto.de",
+      "categories": [
+        "Advertising"
+      ],
+      "domains": [
+        "otto.de",
+        "orbidder.de"
+      ]
+    },
+    {
+      "name": "Usercentrics",
+      "home": "usercentrics.eu",
+      "categories": [
+        "Consent Management"
+      ],
+      "domains": [
+        "usercentrics.eu",
+        "cookiebot.com"
+      ]
+    },
+    {
+      "name": "consentmanager",
+      "home": "consentmanager.net",
+      "categories": [
+        "Consent Management"
+      ],
+      "domains": [
+        "consentmanager.net",
+        "consentmanager.de"
+      ]
+    },
+    {
+      "name": "Sourcepoint",
+      "home": "sourcepoint.com",
+      "categories": [
+        "Consent Management"
+      ],
+      "domains": [
+        "privacy-mgmt.com",
+        "sp-prod.net"
+      ]
+    },
+    {
+      "name": "OneTrust",
+      "home": "onetrust.com",
+      "categories": [
+        "Consent Management"
+      ],
+      "domains": [
+        "onetrust.com",
+        "cookielaw.org"
+      ]
+    }
+  ],
+  "infrastructure": {
+    "cdn": [
+      "cloudfront.net",
+      "akamaihd.net",
+      "akamaized.net",
+      "fastly.net",
+      "fastly-edge.com",
+      "unpkg.com",
+      "jsdelivr.net",
+      "bootstrapcdn.com",
+      "cdnjs.com",
+      "b-cdn.net",
+      "azureedge.net",
+      "fontawesome.com",
+      "typekit.net",
+      "gstatic.com",
+      "googleapis.com"
+    ]
+  },
+  "bucketOverrides": {
+    "google-analytics.com": "analytics",
+    "googletagmanager.com": "analytics",
+    "adobedtm.com": "analytics",
+    "omtrdc.net": "analytics"
+  }
+}
