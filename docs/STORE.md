@@ -104,7 +104,7 @@ Paste-ready texts for the developer dashboard (https://chrome.google.com/webstor
 - Data usage: tick "Web history", "Website content", "User activity" and "Personally identifiable information"
   (typed email addresses are compared in memory only). All of it is processed locally and never transmitted.
 - Certifications: tick all three (no selling, no unrelated use, no creditworthiness).
-- Privacy policy URL: https://github.com/teqneers/you-are-the-product/blob/main/docs/PRIVACY.md
+- Privacy policy URL: https://teqneers.github.io/you-are-the-product/PRIVACY.html
 
 **Distribution tab:** Public, all regions.
 

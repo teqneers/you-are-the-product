@@ -55,7 +55,7 @@ Sources: [Submitting an add-on](https://extensionworkshop.com/documentation/publ
      "Web history", "Website content" (request contents), "User activity" (clicks, mouse movements and key
      counts for the replay) and "Personally identifiable information" (typed email addresses, compared in memory).
    - Tick the Limited Use certifications; the Limited Use statement must be in the privacy policy.
-   - URL of the privacy policy: https://github.com/teqneers/you-are-the-product/blob/main/docs/PRIVACY.md
+   - URL of the privacy policy: https://teqneers.github.io/you-are-the-product/PRIVACY.html
 5. Store listing: texts, at least one screenshot (1280×800), 128 px icon.
 
 Notes: new accounts get 2 extension slots by default (since 2026-08-20). Since 2026-08-01: collect only the data

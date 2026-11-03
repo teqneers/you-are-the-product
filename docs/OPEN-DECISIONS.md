@@ -46,7 +46,7 @@ Decided: the publisher is **teqneers**. Consequences:
 
 - **Privacy policy hosting:** decided: on GitHub (public repository, link to `docs/PRIVACY.md` or GitHub Pages).
   Repository: https://github.com/teqneers/you-are-the-product. Privacy policy URL:
-  https://github.com/teqneers/you-are-the-product/blob/main/docs/PRIVACY.md. Contact: you-are-the-product@teqneers.de.
+  https://teqneers.github.io/you-are-the-product/PRIVACY.html. Contact: you-are-the-product@teqneers.de.
 - **Chrome data categories:** in the privacy tab declare at least "Web history"; check in the dashboard whether
   "Website content" and "User activity" apply too (see `docs/PUBLISHING.md`).
 - **Safari scope:** decided: macOS only for now, no iOS. Open: App Store or signed distribution outside the store.
