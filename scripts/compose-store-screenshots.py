@@ -1,5 +1,9 @@
+# Adds headlines to raw captures (page and live-view screenshots) for the store listings.
+# Run it in the folder with the captures; needs Pillow and macOS's Helvetica Neue.
+from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
-import sys
+
+ICON = Path(__file__).resolve().parent.parent / 'public/icon/128.png'
 W, H = 2560, 1600
 BG = (15, 17, 21)
 RED = (255, 77, 94)
@@ -44,7 +48,7 @@ def compose(page, panel, number, headline, sub, out, label):
     d = ImageDraw.Draw(img)
     left, width = 150, x - 150 - 140
     # brand
-    logo = Image.open('/Users/oliver/projects/github/you-are-the-product/public/icon/128.png').convert('RGBA').resize((88, 88))
+    logo = Image.open(ICON).convert('RGBA').resize((88, 88))
     img.paste(logo, (left, 130), logo)
     d.text((left + 112, 150), 'You Are The Product', font=font(46), fill=TEXT)
     yy = 420
