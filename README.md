@@ -21,8 +21,9 @@ webmd.com, a health site. You click "Accept All".
 
   1 click   =  56 companies get your consent
             +  28 more claim a "legitimate interest" (no consent needed, they say)
-               13 companies actually watched you on the page, 6 of them learned which page you read
-                6 of them are registered data brokers: they buy and sell personal data
+               13 companies actually watched you on the page
+                6 of them learned which page you read
+                6 are registered data brokers: they trade personal data
 ```
 
 What else we saw on real sites in November 2026, with this extension (visiting from Germany, so with the EU

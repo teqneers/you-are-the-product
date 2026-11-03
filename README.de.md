@@ -19,7 +19,8 @@ was sonst unsichtbar bleibt.
 chefkoch.de, eine Rezeptseite. Du klickst auf „Allen Zwecken zustimmen“.
 
   1 Klick   =  145 Firmen bekommen deine Einwilligung
-            +   59 weitere berufen sich auf „berechtigtes Interesse“ (dafür brauche es keine Einwilligung, sagen sie)
+            +   59 weitere berufen sich auf „berechtigtes Interesse“
+                   (dafür brauche es keine Einwilligung, sagen sie)
                14 Firmen haben dir auf der Seite tatsächlich zugesehen
                Google erfuhr, welche Rezeptliste du angesehen hast: „Pflaumenmarmelade selber machen“
 ```
