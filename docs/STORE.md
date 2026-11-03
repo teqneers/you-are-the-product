@@ -74,15 +74,43 @@ Die Extension blockiert nichts und schickt nichts weg: Alle Daten bleiben in dei
 
 **Kategorie:** Datenschutz & Sicherheit / Bildung
 
-## Permission justification (Chrome Web Store)
+## Chrome Web Store dashboard
 
-- **Host permissions `<all_urls>` and `webRequest`:** The extension's single purpose is to show which third
-  parties a website loads. It must observe requests on every site the user visits. Requests are only read,
-  never blocked or modified.
-- **tabs:** Associates requests with the tab and site the user is viewing, and updates the badge per tab.
-- **storage:** Stores the collected data locally; nothing leaves the browser.
-- **sidePanel:** Shows the live view next to the page.
-- **Remote code:** None. All code is bundled; data files are part of the package.
+Paste-ready texts for the developer dashboard (https://chrome.google.com/webstore/devconsole).
+
+**Package:** `.output/you-are-the-product-<version>-chrome.zip` (`npm run zip`).
+
+**Store listing tab**
+- Description: the English description above (and the German one as a second language).
+- Category: Privacy & Security. Language: English (add German under "Localisation").
+- Store icon: `docs/store/chrome-icon-128.png` (96 px artwork with transparent padding, as Google asks).
+- Screenshots: `docs/store/store-1.png` … `store-5.png` (1280×800).
+- Small promo tile: `docs/store/chrome-promo-small-440x280.png`. Marquee: `docs/store/chrome-promo-marquee-1400x560.png`.
+- Homepage URL: https://github.com/teqneers/you-are-the-product
+- Support URL: https://github.com/teqneers/you-are-the-product/issues
+
+**Privacy tab**
+- Single purpose: Shows users which third parties the websites they visit load and what data those third parties
+  receive, so they understand how they are tracked.
+- `webRequest` and host permission `<all_urls>`: The extension's only purpose is to show which third parties a
+  website loads and what they receive. It must observe the requests on every site the user visits. Requests are
+  only read, never blocked, redirected or modified.
+- `tabs`: Associates requests with the tab and site the user is looking at, shows the count on the toolbar icon,
+  and reads the address of the current tab to offer a copy of the link without tracking parameters.
+- `storage`: Keeps the collected statistics locally in the browser so the overview can show them across sites.
+  Nothing leaves the device.
+- `sidePanel`: Shows the live view next to the page while the user browses.
+- Remote code: No, I am not using remote code. All code and data files are part of the package.
+- Data usage: tick "Web history", "Website content", "User activity" and "Personally identifiable information"
+  (typed email addresses are compared in memory only). All of it is processed locally and never transmitted.
+- Certifications: tick all three (no selling, no unrelated use, no creditworthiness).
+- Privacy policy URL: https://github.com/teqneers/you-are-the-product/blob/main/docs/PRIVACY.md
+
+**Distribution tab:** Public, all regions.
+
+**Test instructions (if asked):** No account needed. Open https://edition.cnn.com or https://www.webmd.com, click
+"Accept" in the cookie banner, then click the toolbar icon; "Keep live view open" opens the side panel and "Open
+overview" shows the graph.
 
 ## Notes for reviewers (addons.mozilla.org)
 
