@@ -1,5 +1,9 @@
 # Store listing / Store-Texte
 
+Screenshots (1280×800) for the stores are in [store/](store/): live view on cnn.com, cookie banner check, reach and
+countries, the overview graph, and "What Google knows about you". The icon is `public/icon/128.png`.
+`scripts/compose-store-screenshots.py` adds the headlines to raw captures.
+
 *Draft / Entwurf.*
 
 ## English
