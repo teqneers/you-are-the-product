@@ -108,9 +108,8 @@ Paste-ready texts for the developer dashboard (https://chrome.google.com/webstor
 
 **Distribution tab:** Public, all regions.
 
-**Test instructions (if asked):** No account needed. Open https://edition.cnn.com or https://www.webmd.com, click
-"Accept" in the cookie banner, then click the toolbar icon; "Keep live view open" opens the side panel and "Open
-overview" shows the graph.
+**Test instructions (max. 500 characters):**
+No account needed. The extension only observes, it blocks nothing. 1. Open https://edition.cnn.com and click "Accept All" in the cookie banner. 2. Click the toolbar icon: the popup shows how many companies watch, what they receive, the cookie banner check and your consent. 3. "Keep live view open" opens the side panel. 4. "Open overview" shows the graph of all visited sites and companies.
 
 ## Notes for reviewers (addons.mozilla.org)
 
