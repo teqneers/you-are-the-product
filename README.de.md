@@ -1,6 +1,15 @@
-# You Are The Product
+<p align="center">
+  <img src="public/icon/128.png" width="96" height="96" alt="Logo von You Are The Product: ein Einkaufswagen mit einer Person darin">
+</p>
 
-[English](README.md)
+<h1 align="center">You Are The Product</h1>
+
+<p align="center">
+  <a href="README.md">English</a> ·
+  <a href="#installieren">Installieren</a> ·
+  <a href="#für-lehrkräfte-eine-10-minuten-übung">Für Lehrkräfte</a> ·
+  <a href="https://teqneers.github.io/you-are-the-product/PRIVACY.html#deutsch">Datenschutz</a>
+</p>
 
 **Eine Browser-Extension, die live zeigt, wer dir beim Surfen zusieht, was diese Firmen erfahren und wer deine
 Aufmerksamkeit kauft.** Für Chrome, Firefox und Safari (macOS). Sie blockiert nichts. Sie macht nur sichtbar,
@@ -87,7 +96,19 @@ welche Werkzeuge du nutzt.
 ## Was du siehst
 
 Klick auf das Symbol für die aktuelle Seite, öffne die Seitenleiste, um sie im Blick zu behalten, oder klick auf
-„Gesamtbild öffnen“ für alles auf einmal.
+„Gesamtbild öffnen“ für alles auf einmal. (Die Bilder zeigen die englische Oberfläche; die Extension spricht 14
+Sprachen, auch Deutsch.)
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/store/store-1.png" alt="Live-Ansicht auf cnn.com: 29 Firmen sahen bei einer Nachrichtenseite zu"></td>
+    <td width="50%"><img src="docs/store/store-2.png" alt="Cookie-Banner-Check: 5 Firmen trackten, bevor das Banner beantwortet war"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/store/store-4.png" alt="Gesamtbild: Graph aus vier Seiten und den Firmen darauf"></td>
+    <td><img src="docs/store/store-5.png" alt="Was Google über dich weiß: eine Gesundheitsseite und zwei Nachrichtenseiten in 7 Tagen"></td>
+  </tr>
+</table>
 
 - **Live-Zähler und Kacheln.** Wie viele Firmen auf dieser Seite sind, gruppiert nach Werbung, Statistik,
   Mitschnitt, Social Media usw., und wie viele erst nach deinem Klick auf „Akzeptieren“ kamen. Die Zahl steht

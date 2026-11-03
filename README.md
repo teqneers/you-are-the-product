@@ -1,9 +1,20 @@
-# You Are The Product
+<p align="center">
+  <img src="public/icon/128.png" width="96" height="96" alt="You Are The Product logo: a shopping cart with a person in it">
+</p>
 
-[Deutsch](README.de.md)
+<h1 align="center">You Are The Product</h1>
+
+<p align="center">
+  <a href="README.de.md">Deutsch</a> ·
+  <a href="#install">Install</a> ·
+  <a href="#for-teachers-a-10-minute-exercise">For teachers</a> ·
+  <a href="https://teqneers.github.io/you-are-the-product/PRIVACY.html">Privacy</a>
+</p>
 
 **A browser extension that shows, live, who is watching you while you browse, what they learn and who buys your
 attention.** For Chrome, Firefox and Safari (macOS). It blocks nothing. It just makes the invisible visible.
+
+![The live view on cnn.com: 29 companies watched one news page](docs/store/store-1.png)
 
 ```
 webmd.com, a health site. You click "Accept All".
@@ -80,6 +91,17 @@ tools to use.
 
 Click the icon for the current page, open the side panel to keep it in view, or click "Open overview" for
 everything at once.
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/store/store-2.png" alt="Cookie banner check: 5 companies started tracking before you answered the banner"></td>
+    <td width="50%"><img src="docs/store/store-3.png" alt="Reach and countries: Google is on 98 % of the most visited websites"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/store/store-4.png" alt="The overview graph of four sites and the companies on them"></td>
+    <td><img src="docs/store/store-5.png" alt="What Google knows about you: a health site and two news sites in the last 7 days"></td>
+  </tr>
+</table>
 
 - **Live counter and tiles.** How many companies are on this page, grouped as ads, analytics, session
   recording, social and so on, and how many arrived only after you clicked "Accept". The number is also on the
