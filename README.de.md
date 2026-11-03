@@ -5,6 +5,11 @@
 <h1 align="center">You Are The Product</h1>
 
 <p align="center">
+  <a href="https://github.com/teqneers/you-are-the-product/actions/workflows/ci.yml"><img src="https://github.com/teqneers/you-are-the-product/actions/workflows/ci.yml/badge.svg" alt="Tests"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/licence-GPL--3.0-blue" alt="Licence: GPL-3.0"></a>
+</p>
+
+<p align="center">
   <a href="README.md">English</a> ·
   <a href="#installieren">Installieren</a> ·
   <a href="#für-lehrkräfte-eine-10-minuten-übung">Für Lehrkräfte</a> ·
