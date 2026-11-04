@@ -1,10 +1,12 @@
 #!/bin/sh
 # (Re)creates the Safari app project in safari/ from the Safari build, e.g.
-#   scripts/create-safari-project.sh de.example.YouAreTheProduct
+#   scripts/create-safari-project.sh de.example.YouAreTheProduct TEAMID1234
 # The project references .output/safari-mv3, so later builds only need `npm run build:safari`.
 # Run it again when files or folders are added at the top level of the build (Xcode lists them one by one).
 set -eu
 BUNDLE_ID="${1:-de.teqneers.YouAreTheProduct}"
+# Apple Developer team of TEQneers GmbH & Co. KG; pass another as second argument.
+TEAM="${2:-34W9U2CC4C}"
 NAME="You Are The Product"
 APP="safari/$NAME/$NAME"
 VERSION=$(node -p "require('./package.json').version")
@@ -35,5 +37,7 @@ sed -i '' 's/^\([[:space:]]*\)INFOPLIST_KEY_NSMainStoryboardFile = Main;/\1INFOP
 \1INFOPLIST_KEY_NSMainStoryboardFile = Main;/' "$PROJECT"
 sed -i '' 's/^\([[:space:]]*\)INFOPLIST_KEY_CFBundleDisplayName = \(.*\);/\1INFOPLIST_KEY_CFBundleDisplayName = \2;\
 \1INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;/' "$PROJECT"
+sed -i '' 's/^\([[:space:]]*\)CODE_SIGN_STYLE = Automatic;/\1CODE_SIGN_STYLE = Automatic;\
+\1DEVELOPMENT_TEAM = '"$TEAM"';/' "$PROJECT"
 npm run icons
-grep -E 'PRODUCT_BUNDLE_IDENTIFIER|MARKETING_VERSION|LSApplicationCategoryType|ITSAppUses' "$PROJECT" | sort -u
+grep -E 'PRODUCT_BUNDLE_IDENTIFIER|MARKETING_VERSION|LSApplicationCategoryType|ITSAppUses|DEVELOPMENT_TEAM' "$PROJECT" | sort -u
