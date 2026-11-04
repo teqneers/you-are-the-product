@@ -3,6 +3,8 @@ import './style.css';
 import { initLanguage, translatePage } from '@/lib/i18n';
 import { mountLiveView } from '@/lib/live';
 
+document.documentElement.classList.toggle('safari', import.meta.env.BROWSER === 'safari');
+
 await initLanguage();
 translatePage();
 

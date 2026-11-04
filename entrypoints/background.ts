@@ -140,6 +140,45 @@ export default defineBackground(() => {
     }
   };
 
+  // Safari does not report page loads (main_frame) to webRequest; until one arrives, the tab's new address
+  // starts the page instead (tabs.onUpdated below).
+  let mainFrameEvents = false;
+
+  /** A page load in a tab: a new session, or one more page of the same site. Call after `ready`. */
+  const startPage = (tabId: number, url: string) => {
+    const hostname = new URL(url).hostname;
+    const domain = getDomain(hostname);
+    if (!domain) return;
+    const previous = state.tabs[tabId];
+    const params = linkParams(url);
+    // Clicking around on the same site extends the session instead of starting over, unless the tab was idle.
+    const lastActivity = previous ? previous.startedAt + Math.max(0, ...Object.values(previous.parties).map((p) => p.lastSeen ?? p.firstSeen)) : 0;
+    if (previous?.site === domain && Date.now() - lastActivity < SAME_VISIT_MS) {
+      previous.host = hostname;
+      previous.pages = (previous.pages ?? 1) + 1;
+      for (const p of params) if (!previous.linkParams?.some((known) => known.name === p.name)) (previous.linkParams ??= []).push(p);
+      redirects.delete(tabId);
+      newVisit.delete(tabId);
+      scheduleSave();
+      return;
+    }
+    const session: TabSession = { site: domain, host: hostname, startedAt: Date.now(), parties: {} };
+    if (params.length) session.linkParams = params;
+    const hops = (redirects.get(tabId) ?? []).filter((d) => d !== domain);
+    if (hops.length) session.redirects = [...new Set(hops)].slice(0, 10);
+    redirects.delete(tabId);
+    state.tabs[tabId] = session;
+    typed.delete(tabId);
+    recent.delete(tabId);
+    const visit = (state.sites[domain] ??= { visits: 0, lastSeen: 0 });
+    visit.visits++;
+    visit.lastSeen = Date.now();
+    newVisit.set(tabId, domain);
+    markBadge(tabId);
+    void queueIcon(domain);
+    scheduleSave();
+  };
+
   const onRequest = async (details: {
     url: string;
     tabId: number;
@@ -147,6 +186,7 @@ export default defineBackground(() => {
     requestBody?: Parameters<typeof bodyText>[0];
   }) => {
     if (details.tabId < 0 || !details.url.startsWith('http')) return;
+    if (details.type === 'main_frame') mainFrameEvents = true;
     await ready;
 
     const hostname = new URL(details.url).hostname;
@@ -156,34 +196,7 @@ export default defineBackground(() => {
     if (!domain) return;
 
     if (details.type === 'main_frame') {
-      const previous = state.tabs[details.tabId];
-      const params = linkParams(details.url);
-      // Clicking around on the same site extends the session instead of starting over, unless the tab was idle.
-      const lastActivity = previous ? previous.startedAt + Math.max(0, ...Object.values(previous.parties).map((p) => p.lastSeen ?? p.firstSeen)) : 0;
-      if (previous?.site === domain && Date.now() - lastActivity < SAME_VISIT_MS) {
-        previous.host = hostname;
-        previous.pages = (previous.pages ?? 1) + 1;
-        for (const p of params) if (!previous.linkParams?.some((known) => known.name === p.name)) (previous.linkParams ??= []).push(p);
-        redirects.delete(details.tabId);
-        newVisit.delete(details.tabId);
-        scheduleSave();
-        return;
-      }
-      const session: TabSession = { site: domain, host: hostname, startedAt: Date.now(), parties: {} };
-      if (params.length) session.linkParams = params;
-      const hops = (redirects.get(details.tabId) ?? []).filter((d) => d !== domain);
-      if (hops.length) session.redirects = [...new Set(hops)].slice(0, 10);
-      redirects.delete(details.tabId);
-      state.tabs[details.tabId] = session;
-      typed.delete(details.tabId);
-      recent.delete(details.tabId);
-      const visit = (state.sites[domain] ??= { visits: 0, lastSeen: 0 });
-      visit.visits++;
-      visit.lastSeen = Date.now();
-      newVisit.set(details.tabId, domain);
-      markBadge(details.tabId);
-      void queueIcon(domain);
-      scheduleSave();
+      startPage(details.tabId, details.url);
       return;
     }
 
@@ -361,6 +374,12 @@ export default defineBackground(() => {
     },
     { urls: ['<all_urls>'], types: ['main_frame'] },
   );
+
+  browser.tabs.onUpdated.addListener((tabId, change) => {
+    if (mainFrameEvents || !change.url?.startsWith('http')) return;
+    const url = change.url;
+    void ready.then(() => startPage(tabId, url));
+  });
 
   // The browser already knows the site's real favicon, which is often not at /favicon.ico.
   browser.tabs.onUpdated.addListener(async (tabId, change) => {

@@ -1,3 +1,10 @@
+/* Chrome and Firefox cap popups at 600 px and scroll them. Safari sizes the popover once, when it opens,
+   and cuts off whatever the live view adds later, so there the popup has a fixed height and scrolls. */
+html.safari body {
+  height: 580px;
+  overflow-y: auto;
+}
+
 main {
   width: 340px;
   padding: 16px;
