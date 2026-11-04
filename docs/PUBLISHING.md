@@ -81,6 +81,10 @@ needed for the single purpose and disclose everything clearly
    Publish) and Pricing and Availability (Add Pricing → free, Set Up Availability). The build shows up on the
    version page only once TestFlight lists it as "Ready to Submit" (reload the page).
    Version 0.1.0 was submitted on 2026-11-04.
+6. Every upload needs a new build number. For a fix to the same version, archive with a higher one, e.g.
+   `xcodebuild … archive CURRENT_PROJECT_VERSION=2`. To swap the build of a version already in review: on the
+   version page "Remove from Review" (or cancel the submission), choose the new build under Build, Save and add it
+   for review again.
 
 Alternative without Xcode: the [Web Extension Packager in App Store Connect](https://developer.apple.com/documentation/safariservices/packaging-and-distributing-safari-web-extensions-with-app-store-connect)
 (Safari 26+, uses Xcode Cloud hours).
