@@ -66,14 +66,16 @@ needed for the single purpose and disclose everything clearly
 
 1. Join the [Apple Developer Program](https://developer.apple.com/programs/enroll/) ($99/year). As a private person
    your name is shown as the seller; a company needs a D-U-N-S number.
-2. The bundle id `de.teqneers.YouAreTheProduct` is set. Recreate the project if needed:
-   `scripts/create-safari-project.sh`.
-3. In Xcode choose the team (Signing & Capabilities, for app and extension), add an app icon and a short
-   explanation in the app window (review guideline 4.2: the wrapper app needs some content).
-4. Product → Archive → Distribute App → App Store Connect. Alternatively without the store: "Developer ID" (signed
-   and notarised, macOS only).
-5. In App Store Connect: privacy policy URL, app privacy answer **"Data Not Collected"** (data processed only on
-   the device does not count as collected), review note on the access to all websites (guideline 4.4.2).
+2. The project in `safari/` is ready: bundle id `de.teqneers.YouAreTheProduct`, version from `package.json`,
+   category, copyright, no export compliance question, app icon, and a wrapper window that explains the extension
+   (review guideline 4.2). Recreate it with `scripts/create-safari-project.sh` when top-level files are added
+   to the build; it keeps the wrapper page.
+3. In App Store Connect create the app (My Apps → + → New App, platform macOS, bundle id above).
+4. `npm run build:safari`, open `safari/You Are The Product/You Are The Product.xcodeproj` in Xcode, choose the
+   team under Signing & Capabilities for both targets, then Product → Archive → Distribute App → App Store
+   Connect → Upload. Alternatively without the store: "Developer ID" (signed and notarised, macOS only).
+5. Fill in the version page with the texts from [STORE.md](STORE.md#mac-app-store-app-store-connect), choose the
+   uploaded build and submit for review.
 
 Alternative without Xcode: the [Web Extension Packager in App Store Connect](https://developer.apple.com/documentation/safariservices/packaging-and-distributing-safari-web-extensions-with-app-store-connect)
 (Safari 26+, uses Xcode Cloud hours).
@@ -83,9 +85,14 @@ Safari limitations (already handled):
 - No DNS access: disguised trackers only via the known list.
 - The badge colour is ignored (only the text shows).
 - Content scripts only run once the user grants the extension access to the website.
-- `webRequest` with request bodies only from Safari 18.4 (minimum version is set); **not yet tested in real
-  Safari**. To test: Safari → Settings → Advanced → "Show features for web developers", then in the Develop menu
-  "Allow unsigned extensions", and run the app from Xcode.
+- `webRequest` with request bodies only from Safari 18.4 (minimum version is set). Tested in Safari 27.2 on
+  real sites (November 2026). To test: Safari → Settings → Advanced → "Show features for web developers", then in
+  the Develop menu "Allow unsigned extensions" (reset on every Safari restart), and run the app from Xcode.
+- No `favIconUrl` in the tabs API: the page script reports the site's `<link rel="icon">` instead.
+- The popover keeps the size it had when it opened and does not scroll with the mouse wheel on its own: the
+  popup has a fixed height there and scrolls itself.
+- Background content: Develop → Web Extension Background Content → You Are The Product opens the Web Inspector
+  for the service worker.
 - iOS: conflicting information on `webRequest`; the project is macOS only for now.
 
 Sources: [Distributing your Safari web extension](https://developer.apple.com/documentation/safariservices/distributing-your-safari-web-extension),

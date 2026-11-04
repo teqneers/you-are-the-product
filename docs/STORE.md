@@ -111,6 +111,52 @@ Paste-ready texts for the developer dashboard (https://chrome.google.com/webstor
 **Test instructions (max. 500 characters):**
 No account needed. The extension only observes, it blocks nothing. 1. Open https://edition.cnn.com and click "Accept All" in the cookie banner. 2. Click the toolbar icon: the popup shows how many companies watch, what they receive, the cookie banner check and your consent. 3. "Keep live view open" opens the side panel. 4. "Open overview" shows the graph of all visited sites and companies.
 
+## Mac App Store (App Store Connect)
+
+Paste-ready texts for https://appstoreconnect.apple.com. Field limits in brackets.
+
+**App information**
+- Name [30]: You Are The Product
+- Subtitle [30]: See who tracks you online · German: Sieh, wer dich online trackt
+- Bundle ID: `de.teqneers.YouAreTheProduct` · SKU: `you-are-the-product`
+- Primary category: Utilities · Secondary: Education
+- Content rights: no third-party content
+- Age rating: answer "None" / "No" everywhere → 4+
+
+**Version page (English, add German as a second localisation)**
+- Promotional text [170]: Every website you visit hands your visit to dozens of companies. See them live: who watches, what they
+  learn and who buys your attention. Nothing leaves your Mac.
+  German: Jede Website gibt deinen Besuch an Dutzende Firmen weiter. Sieh live, wer zusieht, was sie erfahren und wer
+  deine Aufmerksamkeit kauft. Nichts verlässt deinen Mac.
+- Description [4000]: the English (German) description above.
+- Keywords [100]: privacy,tracker,tracking,cookies,consent,GDPR,ads,fingerprinting,data broker,surveillance,education
+  German: Datenschutz,Tracker,Tracking,Cookies,Einwilligung,DSGVO,Werbung,Fingerprinting,Datenhändler
+- Screenshots (Mac, 1280×800): `docs/store/store-1.png` … `store-5.png`
+- Support URL: https://github.com/teqneers/you-are-the-product/issues
+- Marketing URL: https://teqneers.github.io/you-are-the-product/
+- Copyright: 2026 TEQneers GmbH & Co. KG
+
+**App privacy:** Privacy policy URL https://teqneers.github.io/you-are-the-product/PRIVACY.html, data collection
+**"No, we do not collect data from this app"** (everything is processed on the Mac and never leaves it).
+
+**Pricing and availability:** free, all countries.
+
+**Export compliance:** answered in the app (`ITSAppUsesNonExemptEncryption = NO`).
+
+**App Review information:** no sign-in needed. Notes:
+
+> You Are The Product is a Safari web extension for education (used in school classes). It shows which third
+> parties a website loads and what they receive. It only observes requests; nothing is blocked, modified or sent
+> anywhere, and there is no account or server.
+>
+> Why it asks for access to all websites: it must see the requests every visited page makes to show them to the
+> user (guideline 4.4.2). All data stays in Safari's local extension storage.
+>
+> How to test: 1. Open the app and click "Quit and Open Safari Settings…", enable "You Are The Product".
+> 2. In Safari open https://edition.cnn.com and click "Accept All" in the cookie banner. 3. Click the extension's
+> toolbar icon and choose "Always Allow on Every Website": the popup lists the companies watching, what they
+> receive and the consent decoded. 4. "Open overview" shows a graph of all visited sites and companies.
+
 ## Notes for reviewers (addons.mozilla.org)
 
 You Are The Product is an educational tool (used in school classes) that shows which third parties a website

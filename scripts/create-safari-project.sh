@@ -27,10 +27,13 @@ APP_ID=$(sed -n 's/.*PRODUCT_BUNDLE_IDENTIFIER = "\{0,1\}\([^";]*\)"\{0,1\};/\1/
 sed -i '' "s/\"$APP_ID\"/$BUNDLE_ID/g; s/= $APP_ID;/= $BUNDLE_ID;/g" "$PROJECT"
 # The packager sets the project to the newest macOS; the targets use 12.0, Safari 18.4 runs there too.
 sed -i '' 's/MACOSX_DEPLOYMENT_TARGET = [0-9.]*;/MACOSX_DEPLOYMENT_TARGET = 12.0;/g' "$PROJECT"
-# App Store Connect needs a category; the version follows package.json.
+# App Store Connect needs a category; the version follows package.json. The app uses no encryption of its own,
+# so App Store Connect does not ask about export compliance.
 sed -i '' "s/MARKETING_VERSION = [0-9.]*;/MARKETING_VERSION = $VERSION;/g" "$PROJECT"
 sed -i '' 's/INFOPLIST_KEY_NSHumanReadableCopyright = "";/INFOPLIST_KEY_NSHumanReadableCopyright = "© TEQneers GmbH \& Co. KG";/g' "$PROJECT"
 sed -i '' 's/^\([[:space:]]*\)INFOPLIST_KEY_NSMainStoryboardFile = Main;/\1INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";\
 \1INFOPLIST_KEY_NSMainStoryboardFile = Main;/' "$PROJECT"
+sed -i '' 's/^\([[:space:]]*\)INFOPLIST_KEY_CFBundleDisplayName = \(.*\);/\1INFOPLIST_KEY_CFBundleDisplayName = \2;\
+\1INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;/' "$PROJECT"
 npm run icons
-grep -E 'PRODUCT_BUNDLE_IDENTIFIER|MARKETING_VERSION|LSApplicationCategoryType' "$PROJECT" | sort -u
+grep -E 'PRODUCT_BUNDLE_IDENTIFIER|MARKETING_VERSION|LSApplicationCategoryType|ITSAppUses' "$PROJECT" | sort -u
