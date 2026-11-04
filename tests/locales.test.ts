@@ -1,3 +1,4 @@
+import { readdirSync, readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { en, type Text } from '@/lib/locales/en';
 import { de } from '@/lib/locales/de';
@@ -35,5 +36,13 @@ describe.each(Object.entries(LOCALES))('%s', (_, messages) => {
       }
       if (typeof translated !== 'string') expect(translated.other, key).toBeTruthy();
     }
+  });
+});
+
+describe('store texts in public/_locales', () => {
+  // Safari rejects the upload to App Store Connect when a description is longer (Chrome allows 132).
+  it.each(readdirSync('public/_locales'))('%s: description has at most 112 characters', (locale) => {
+    const messages = JSON.parse(readFileSync(`public/_locales/${locale}/messages.json`, 'utf8'));
+    expect([...messages.extDescription.message].length).toBeLessThanOrEqual(112);
   });
 });
