@@ -136,7 +136,8 @@ Paste-ready texts for https://appstoreconnect.apple.com. Field limits in bracket
 - Marketing URL: https://teqneers.github.io/you-are-the-product/
 - Copyright: 2026 TEQneers GmbH & Co. KG
 
-**App privacy:** Privacy policy URL https://teqneers.github.io/you-are-the-product/PRIVACY.html, data collection
+**App privacy:** Privacy policy URL https://teqneers.github.io/you-are-the-product/PRIVACY.html (German:
+`…/PRIVACY.html#deutsch`), data collection
 **"No, we do not collect data from this app"** (everything is processed on the Mac and never leaves it).
 
 **Pricing and availability:** free, all countries.

@@ -75,7 +75,12 @@ needed for the single purpose and disclose everything clearly
    team under Signing & Capabilities for both targets, then Product → Archive → Distribute App → App Store
    Connect → Upload. Alternatively without the store: "Developer ID" (signed and notarised, macOS only).
 5. Fill in the version page with the texts from [STORE.md](STORE.md#mac-app-store-app-store-connect), choose the
-   uploaded build and submit for review.
+   uploaded build and submit for review. "Add for Review" stays disabled while the page has unsaved changes (Save
+   first); clicking it lists what is still missing. Besides the version page that is: App Information (category,
+   age rating, content rights), App Privacy (privacy policy URL per language, "Get Started" → no data collected →
+   Publish) and Pricing and Availability (Add Pricing → free, Set Up Availability). The build shows up on the
+   version page only once TestFlight lists it as "Ready to Submit" (reload the page).
+   Version 0.1.0 was submitted on 2026-11-04.
 
 Alternative without Xcode: the [Web Extension Packager in App Store Connect](https://developer.apple.com/documentation/safariservices/packaging-and-distributing-safari-web-extensions-with-app-store-connect)
 (Safari 26+, uses Xcode Cloud hours).
