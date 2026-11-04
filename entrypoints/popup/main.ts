@@ -4,6 +4,21 @@ import { initLanguage, translatePage } from '@/lib/i18n';
 import { mountLiveView } from '@/lib/live';
 
 document.documentElement.classList.toggle('safari', import.meta.env.BROWSER === 'safari');
+if (import.meta.env.BROWSER === 'safari') {
+  // Safari does not scroll a popover with the mouse wheel until a trackpad gesture has scrolled it once.
+  // The wheel moves the body here; when that moves nothing, Safari's own scrolling stays untouched.
+  addEventListener(
+    'wheel',
+    (e) => {
+      if (e.ctrlKey) return;
+      const lines = e.deltaMode === WheelEvent.DOM_DELTA_LINE ? 16 : e.deltaMode === WheelEvent.DOM_DELTA_PAGE ? innerHeight : 1;
+      const before = document.body.scrollTop;
+      document.body.scrollTop += e.deltaY * lines;
+      if (document.body.scrollTop !== before) e.preventDefault();
+    },
+    { passive: false },
+  );
+}
 
 await initLanguage();
 translatePage();
