@@ -196,10 +196,13 @@ export default defineBackground(() => {
     url: string;
     tabId: number;
     type: string;
+    frameId?: number;
     requestBody?: Parameters<typeof bodyText>[0];
   }) => {
     if (details.tabId < 0 || !details.url.startsWith('http')) return;
-    if (details.type === 'main_frame') mainFrameEvents = true;
+    // Safari also reports the documents of iframes (ad slots) as main_frame; only the top frame is the page.
+    const pageLoad = details.type === 'main_frame' && !details.frameId;
+    if (pageLoad) mainFrameEvents = true;
     await ready;
 
     const hostname = new URL(details.url).hostname;
@@ -208,7 +211,7 @@ export default defineBackground(() => {
     let domain = getDomain(hostname);
     if (!domain) return;
 
-    if (details.type === 'main_frame') {
+    if (pageLoad) {
       startPage(details.tabId, details.url);
       return;
     }
@@ -403,6 +406,15 @@ export default defineBackground(() => {
       delete icons[site];
       void queueIcon(site, [change.favIconUrl], true);
     }
+  });
+
+  // Tabs closed while the extension was not running (browser restart; Safari also suspends it) never
+  // reported onRemoved.
+  void ready.then(async () => {
+    const open = new Set((await browser.tabs.query({})).map((t) => t.id));
+    const closed = Object.keys(state.tabs).filter((id) => !open.has(Number(id)));
+    for (const id of closed) delete state.tabs[Number(id)];
+    if (closed.length) scheduleSave();
   });
 
   browser.tabs.onRemoved.addListener(async (tabId) => {

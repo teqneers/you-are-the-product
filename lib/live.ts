@@ -538,7 +538,9 @@ export function mountLiveView(root: HTMLElement) {
   copyBox.append(copyButton, copyInfo);
 
   function render() {
-    const session = state?.tabs[tabId];
+    // Until the stored state is read, "no data" would be wrong; Safari takes a moment to read it.
+    if (!state) return;
+    const session = state.tabs[tabId];
     if (!session) {
       content.replaceChildren(el('p', 'muted', t('live.noData')));
       return;
