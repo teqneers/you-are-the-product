@@ -10,10 +10,43 @@
     <script src="../Script.js" defer></script>
 </head>
 <body>
-    <img src="../Icon.png" width="128" height="128" alt="You Are The Product Icon">
-    <p class="state-unknown">You can turn on You Are The Product’s extension in Safari Extensions preferences.</p>
-    <p class="state-on">You Are The Product’s extension is currently on. You can turn it off in Safari Extensions preferences.</p>
-    <p class="state-off">You Are The Product’s extension is currently off. You can turn it on in Safari Extensions preferences.</p>
-    <button class="open-preferences">Quit and Open Safari Extensions Preferences…</button>
+    <header>
+        <img src="../Icon.png" width="96" height="96" alt="">
+        <div>
+            <h1>You Are The Product</h1>
+            <p class="tagline">See who is watching you while you browse.</p>
+        </div>
+    </header>
+
+    <section class="status">
+        <p class="state-unknown">Turn on the extension in Safari Settings → Extensions.</p>
+        <p class="state-on">The extension is on. Open any website and click its icon in the Safari toolbar.</p>
+        <p class="state-off">The extension is off. Turn it on in Safari Settings → Extensions.</p>
+        <button class="open-preferences">Quit and Open Safari Settings…</button>
+    </section>
+
+    <section>
+        <h2>What it shows</h2>
+        <ul>
+            <li><strong>Who is watching:</strong> the companies a website loads, live, and which ones arrived only after you clicked “Accept”.</li>
+            <li><strong>What they learn:</strong> the page you read, IDs that recognise you, products and prices, even email addresses typed into forms.</li>
+            <li><strong>Cookie banner check:</strong> tracking that ran before your choice or after “Reject”, and your consent in plain words.</li>
+            <li><strong>The big picture:</strong> a graph of all sites and the companies that connect them.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Try it</h2>
+        <ol>
+            <li>Allow the extension on all websites when Safari asks.</li>
+            <li>Open a news site, for example cnn.com or theguardian.com, and click “Accept” in the cookie banner.</li>
+            <li>Click the extension icon in the toolbar and watch the counter.</li>
+        </ol>
+    </section>
+
+    <footer>
+        It blocks nothing and sends nothing away: all data stays in Safari on this Mac.<br>
+        Made by TEQneers · you-are-the-product@teqneers.de
+    </footer>
 </body>
 </html>

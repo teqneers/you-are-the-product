@@ -1,9 +1,10 @@
 function show(enabled, useSettingsInsteadOfPreferences) {
-    if (useSettingsInsteadOfPreferences) {
-        document.getElementsByClassName('state-on')[0].innerText = "You Are The Product’s extension is currently on. You can turn it off in the Extensions section of Safari Settings.";
-        document.getElementsByClassName('state-off')[0].innerText = "You Are The Product’s extension is currently off. You can turn it on in the Extensions section of Safari Settings.";
-        document.getElementsByClassName('state-unknown')[0].innerText = "You can turn on You Are The Product’s extension in the Extensions section of Safari Settings.";
-        document.getElementsByClassName('open-preferences')[0].innerText = "Quit and Open Safari Settings…";
+    if (!useSettingsInsteadOfPreferences) {
+        // macOS 12 still calls them Safari Preferences.
+        for (const el of document.querySelectorAll('.status p')) {
+            el.innerText = el.innerText.replace('Safari Settings', 'Safari Preferences');
+        }
+        document.querySelector('button.open-preferences').innerText = "Quit and Open Safari Extensions Preferences…";
     }
 
     if (typeof enabled === "boolean") {
