@@ -115,20 +115,33 @@ export default defineBackground(() => {
     return browser.storage.local.set({ [ICONS_KEY]: icons });
   });
   const pendingIcons = new Map<string, string[]>();
+  const fetchingIcons = new Set<string>();
+  // Icons a page declared while the default locations of its site were still being fetched: tried if those fail.
+  const declaredIcons = new Map<string, string[]>();
   let iconWorkers = 0;
   let iconSaveTimer: ReturnType<typeof setTimeout> | undefined;
 
-  /** Fetches a domain's favicon once, at most four at a time. */
-  const queueIcon = async (domain: string, urls = faviconUrls(domain)) => {
+  /** Fetches a domain's favicon once, at most four at a time. `declared`: addresses the page itself named. */
+  const queueIcon = async (domain: string, urls = faviconUrls(domain), declared = false) => {
     await iconsReady;
-    if (icons[domain] || pendingIcons.has(domain)) return;
+    if (icons[domain]) return;
+    if (fetchingIcons.has(domain)) {
+      if (declared) declaredIcons.set(domain, urls);
+      return;
+    }
+    if (pendingIcons.has(domain) && !declared) return;
     pendingIcons.set(domain, urls);
     while (iconWorkers < 4 && pendingIcons.size) {
       iconWorkers++;
       void (async () => {
         for (const [next, nextUrls] of pendingIcons) {
           pendingIcons.delete(next);
+          fetchingIcons.add(next);
           icons[next] = await fetchIcon(nextUrls, next);
+          fetchingIcons.delete(next);
+          const retry = declaredIcons.get(next);
+          declaredIcons.delete(next);
+          if (!icons[next] && retry) pendingIcons.set(next, retry);
           iconSaveTimer ??= setTimeout(() => {
             iconSaveTimer = undefined;
             browser.storage.local.set({ [ICONS_KEY]: icons });
@@ -388,7 +401,7 @@ export default defineBackground(() => {
     const site = state.tabs[tabId]?.site;
     if (site && !icons[site]) {
       delete icons[site];
-      void queueIcon(site, [change.favIconUrl, ...faviconUrls(site)]);
+      void queueIcon(site, [change.favIconUrl], true);
     }
   });
 
@@ -435,6 +448,14 @@ export default defineBackground(() => {
         scheduleSave();
       }
       for (const r of recent.get(tabId) ?? []) recordFormLeak(tabId, r.domain, r.url, r.body);
+    } else if (message.type === 'favicon') {
+      const urls = (message as { urls?: unknown }).urls;
+      if (sender.tab?.id === undefined || sender.frameId !== 0 || !Array.isArray(urls)) return;
+      const valid = urls.filter((u): u is string => typeof u === 'string' && u.length < 2048).slice(0, 5);
+      await Promise.all([ready, iconsReady]);
+      const site = state.tabs[sender.tab.id]?.site;
+      // fetchIcon only loads public https addresses, whatever the page declared.
+      if (site && !icons[site] && valid.length) void queueIcon(site, valid, true);
     } else if (message.type === 'submitted') {
       const entry = sender.tab?.id !== undefined ? typed.get(sender.tab.id) : undefined;
       if (entry) entry.submitted = true;
