@@ -454,8 +454,10 @@ export default defineBackground(() => {
       const valid = urls.filter((u): u is string => typeof u === 'string' && u.length < 2048).slice(0, 5);
       await Promise.all([ready, iconsReady]);
       const site = state.tabs[sender.tab.id]?.site;
+      // Only the page the tab now shows may name its site's icon (not one still unloading after a navigation).
       // fetchIcon only loads public https addresses, whatever the page declared.
-      if (site && !icons[site] && valid.length) void queueIcon(site, valid, true);
+      const from = sender.url?.startsWith('http') ? getDomain(new URL(sender.url).hostname) : null;
+      if (site && from === site && !icons[site] && valid.length) void queueIcon(site, valid, true);
     } else if (message.type === 'submitted') {
       const entry = sender.tab?.id !== undefined ? typed.get(sender.tab.id) : undefined;
       if (entry) entry.submitted = true;
