@@ -148,14 +148,13 @@ everything at once.
 
 ## Install
 
-The extension is not in the stores yet: **Chrome Web Store, Firefox Add-ons and Mac App Store coming soon.**
+- **Firefox:** [Get it on Firefox Add-ons](https://addons.mozilla.org/firefox/addon/you-are-the-product/)
+  (Firefox 140 or newer).
+- **Chrome and Safari:** Chrome Web Store and Mac App Store coming soon.
 
-Until then you can load it from a build (see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for how to build):
-
-- **Chrome:** open `chrome://extensions`, switch on "Developer mode", click "Load unpacked" and choose the
-  folder `.output/chrome-mv3`.
-- **Firefox:** open `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on…" and choose
-  `.output/firefox-mv2/manifest.json`. Firefox removes it again when it restarts.
+Until then you can load the Chrome version from a build (see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for how
+to build): open `chrome://extensions`, switch on "Developer mode", click "Load unpacked" and choose the folder
+`.output/chrome-mv3`.
 
 ## Your privacy
 

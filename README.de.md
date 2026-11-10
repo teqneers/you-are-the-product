@@ -158,15 +158,13 @@ Sprachen, auch Deutsch.)
 
 ## Installieren
 
-Die Extension ist noch nicht in den Stores: **Chrome Web Store, Firefox Add-ons und Mac App Store folgen bald.**
+- **Firefox:** [Bei Firefox Add-ons holen](https://addons.mozilla.org/de/firefox/addon/you-are-the-product/)
+  (ab Firefox 140).
+- **Chrome und Safari:** Chrome Web Store und Mac App Store folgen bald.
 
-Bis dahin kannst du sie aus einem Build laden (wie man baut, steht in
-[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md), auf Englisch):
-
-- **Chrome:** `chrome://extensions` öffnen, „Entwicklermodus“ einschalten, „Entpackte Erweiterung laden“
-  klicken und den Ordner `.output/chrome-mv3` wählen.
-- **Firefox:** `about:debugging#/runtime/this-firefox` öffnen, „Temporäres Add-on laden…“ klicken und
-  `.output/firefox-mv2/manifest.json` wählen. Firefox entfernt es beim nächsten Neustart wieder.
+Bis dahin kannst du die Chrome-Version aus einem Build laden (wie man baut, steht in
+[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md), auf Englisch): `chrome://extensions` öffnen, „Entwicklermodus“
+einschalten, „Entpackte Erweiterung laden“ klicken und den Ordner `.output/chrome-mv3` wählen.
 
 ## Deine Privatsphäre
 
