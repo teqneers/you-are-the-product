@@ -19,6 +19,11 @@
 **A browser extension that shows, live, who is watching you while you browse, what they learn and who buys your
 attention.** For Chrome, Firefox and Safari (macOS). It blocks nothing. It just makes the invisible visible.
 
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/you-are-the-product/abjemhhjkaelkbiabifhfccpcdmmbiag"><img src="https://img.shields.io/chrome-web-store/v/abjemhhjkaelkbiabifhfccpcdmmbiag?label=Chrome%20Web%20Store&logo=googlechrome&logoColor=white&color=4285F4&style=for-the-badge" alt="Get it on the Chrome Web Store"></a>
+  <a href="https://addons.mozilla.org/firefox/addon/you-are-the-product/"><img src="https://img.shields.io/amo/v/you-are-the-product?label=Firefox%20Add-ons&logo=firefoxbrowser&logoColor=white&color=FF7139&style=for-the-badge" alt="Get it on Firefox Add-ons"></a>
+</p>
+
 ![The live view on cnn.com: 29 companies watched one news page](docs/store/store-1.png)
 
 ```

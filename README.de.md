@@ -20,6 +20,11 @@
 Aufmerksamkeit kauft.** Für Chrome, Firefox und Safari (macOS). Sie blockiert nichts. Sie macht nur sichtbar,
 was sonst unsichtbar bleibt.
 
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/you-are-the-product/abjemhhjkaelkbiabifhfccpcdmmbiag?hl=de"><img src="https://img.shields.io/chrome-web-store/v/abjemhhjkaelkbiabifhfccpcdmmbiag?label=Chrome%20Web%20Store&logo=googlechrome&logoColor=white&color=4285F4&style=for-the-badge" alt="Im Chrome Web Store holen"></a>
+  <a href="https://addons.mozilla.org/de/firefox/addon/you-are-the-product/"><img src="https://img.shields.io/amo/v/you-are-the-product?label=Firefox%20Add-ons&logo=firefoxbrowser&logoColor=white&color=FF7139&style=for-the-badge" alt="Bei Firefox Add-ons holen"></a>
+</p>
+
 ```
 chefkoch.de, eine Rezeptseite. Du klickst auf „Allen Zwecken zustimmen“.
 
