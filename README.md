@@ -150,11 +150,9 @@ everything at once.
 
 - **Firefox:** [Get it on Firefox Add-ons](https://addons.mozilla.org/firefox/addon/you-are-the-product/)
   (Firefox 140 or newer).
-- **Chrome and Safari:** Chrome Web Store and Mac App Store coming soon.
-
-Until then you can load the Chrome version from a build (see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for how
-to build): open `chrome://extensions`, switch on "Developer mode", click "Load unpacked" and choose the folder
-`.output/chrome-mv3`.
+- **Chrome:** [Get it on the Chrome Web Store](https://chromewebstore.google.com/detail/you-are-the-product/abjemhhjkaelkbiabifhfccpcdmmbiag)
+  (also works in Edge, Brave and other Chromium browsers).
+- **Safari (macOS):** Mac App Store coming soon.
 
 ## Your privacy
 

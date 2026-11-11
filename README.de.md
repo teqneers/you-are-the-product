@@ -160,11 +160,9 @@ Sprachen, auch Deutsch.)
 
 - **Firefox:** [Bei Firefox Add-ons holen](https://addons.mozilla.org/de/firefox/addon/you-are-the-product/)
   (ab Firefox 140).
-- **Chrome und Safari:** Chrome Web Store und Mac App Store folgen bald.
-
-Bis dahin kannst du die Chrome-Version aus einem Build laden (wie man baut, steht in
-[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md), auf Englisch): `chrome://extensions` öffnen, „Entwicklermodus“
-einschalten, „Entpackte Erweiterung laden“ klicken und den Ordner `.output/chrome-mv3` wählen.
+- **Chrome:** [Im Chrome Web Store holen](https://chromewebstore.google.com/detail/you-are-the-product/abjemhhjkaelkbiabifhfccpcdmmbiag)
+  (läuft auch in Edge, Brave und anderen Chromium-Browsern).
+- **Safari (macOS):** Mac App Store folgt bald.
 
 ## Deine Privatsphäre
 
