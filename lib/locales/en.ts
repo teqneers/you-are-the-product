@@ -88,6 +88,12 @@ export const en = {
   'profile.hint': 'Click a circle or a company for details.',
   'profile.close': 'Close',
   'dash.present': 'Presentation',
+  'nudge.text': 'Has this opened your eyes? A rating helps others find the extension, and so does a link to a friend or your class.',
+  'nudge.rate': 'Rate it',
+  'nudge.share': 'Share link',
+  'nudge.copied': 'Link copied',
+  'nudge.later': 'Later',
+  'nudge.shareText': 'You Are The Product shows who tracks you while you browse:',
 
   'legend.button': 'Legend',
   'legend.site': 'Visited site',

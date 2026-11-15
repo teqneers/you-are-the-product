@@ -81,6 +81,12 @@ export const ja: Messages = {
   'profile.hint': '円または企業をクリックすると詳細が表示されます。',
   'profile.close': '閉じる',
   'dash.present': 'プレゼンテーション',
+  'nudge.text': '気づきはありましたか？評価や、友だち・クラスへのリンク共有は、ほかの人がこの拡張機能を見つける助けになります。',
+  'nudge.rate': '評価する',
+  'nudge.share': 'リンクを共有',
+  'nudge.copied': 'リンクをコピーしました',
+  'nudge.later': 'あとで',
+  'nudge.shareText': 'You Are The Product は、ブラウジング中に誰があなたを追跡しているかを表示します：',
 
   'legend.button': '凡例',
   'legend.site': '訪問したサイト',

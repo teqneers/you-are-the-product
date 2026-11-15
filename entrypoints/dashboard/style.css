@@ -215,3 +215,47 @@ body.presenting .present-headline strong {
   border-left: 3px solid var(--tracker);
   font-size: 13px;
 }
+
+/* Quiet "rate or share" hint, see lib/nudge.ts. */
+.nudge {
+  position: relative;
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  font-size: 13px;
+}
+
+.nudge p {
+  margin: 0 24px 10px 0;
+}
+
+.nudge .close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 0 6px;
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+
+.nudge-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.nudge .button {
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.nudge .button:hover {
+  border-color: var(--muted);
+}

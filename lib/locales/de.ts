@@ -90,6 +90,12 @@ export const de: Messages = {
   'profile.hint': 'Klick auf einen Kreis oder eine Firma für Details.',
   'profile.close': 'Schließen',
   'dash.present': 'Präsentation',
+  'nudge.text': 'Hat dir das die Augen geöffnet? Eine Bewertung hilft anderen, die Extension zu finden, ein Link an Freunde oder deine Klasse auch.',
+  'nudge.rate': 'Bewerten',
+  'nudge.share': 'Link teilen',
+  'nudge.copied': 'Link kopiert',
+  'nudge.later': 'Später',
+  'nudge.shareText': 'You Are The Product zeigt, wer dich beim Surfen trackt:',
 
   'legend.button': 'Legende',
   'legend.site': 'Besuchte Seite',

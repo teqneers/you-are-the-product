@@ -99,6 +99,12 @@ export const fi: Messages = {
   'profile.hint': 'Klikkaa ympyrää tai yritystä nähdäksesi lisää.',
   'profile.close': 'Sulje',
   'dash.present': 'Esitys',
+  'nudge.text': 'Avasiko tämä silmäsi? Arvio auttaa muita löytämään laajennuksen, samoin linkki ystävälle tai luokallesi.',
+  'nudge.rate': 'Arvioi',
+  'nudge.share': 'Jaa linkki',
+  'nudge.copied': 'Linkki kopioitu',
+  'nudge.later': 'Myöhemmin',
+  'nudge.shareText': 'You Are The Product näyttää, kuka seuraa sinua selatessasi:',
 
   'legend.button': 'Selite',
   'legend.site': 'Käyty sivusto',

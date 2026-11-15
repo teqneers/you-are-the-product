@@ -90,6 +90,12 @@ export const sv: Messages = {
   'profile.hint': 'Klicka på en cirkel eller ett företag för detaljer.',
   'profile.close': 'Stäng',
   'dash.present': 'Presentation',
+  'nudge.text': 'Har det öppnat dina ögon? Ett betyg hjälper andra att hitta tillägget, och det gör en länk till en vän eller din klass också.',
+  'nudge.rate': 'Betygsätt',
+  'nudge.share': 'Dela länk',
+  'nudge.copied': 'Länk kopierad',
+  'nudge.later': 'Senare',
+  'nudge.shareText': 'You Are The Product visar vem som spårar dig när du surfar:',
 
   'legend.button': 'Förklaring',
   'legend.site': 'Besökt webbplats',

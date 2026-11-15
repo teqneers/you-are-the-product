@@ -121,6 +121,12 @@ export const pl: Messages = {
   'profile.hint': 'Kliknij kółko lub firmę, aby zobaczyć szczegóły.',
   'profile.close': 'Zamknij',
   'dash.present': 'Prezentacja',
+  'nudge.text': 'Czy to otworzyło ci oczy? Ocena pomaga innym znaleźć rozszerzenie, podobnie jak link wysłany znajomym lub klasie.',
+  'nudge.rate': 'Oceń',
+  'nudge.share': 'Udostępnij link',
+  'nudge.copied': 'Link skopiowany',
+  'nudge.later': 'Później',
+  'nudge.shareText': 'You Are The Product pokazuje, kto cię śledzi podczas przeglądania:',
 
   'legend.button': 'Legenda',
   'legend.site': 'Odwiedzona strona',

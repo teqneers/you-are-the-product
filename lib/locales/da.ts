@@ -90,6 +90,12 @@ export const da: Messages = {
   'profile.hint': 'Klik på en cirkel eller et firma for detaljer.',
   'profile.close': 'Luk',
   'dash.present': 'Præsentation',
+  'nudge.text': 'Har det åbnet dine øjne? En bedømmelse hjælper andre med at finde udvidelsen, og det gør et link til en ven eller din klasse også.',
+  'nudge.rate': 'Bedøm',
+  'nudge.share': 'Del link',
+  'nudge.copied': 'Link kopieret',
+  'nudge.later': 'Senere',
+  'nudge.shareText': 'You Are The Product viser, hvem der sporer dig, mens du surfer:',
 
   'legend.button': 'Forklaring',
   'legend.site': 'Besøgt websted',

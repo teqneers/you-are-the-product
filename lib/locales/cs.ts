@@ -121,6 +121,12 @@ export const cs: Messages = {
   'profile.hint': 'Klikni na kruh nebo firmu pro podrobnosti.',
   'profile.close': 'Zavřít',
   'dash.present': 'Prezentace',
+  'nudge.text': 'Otevřelo vám to oči? Hodnocení pomáhá ostatním rozšíření najít, stejně jako odkaz pro kamaráda nebo vaši třídu.',
+  'nudge.rate': 'Ohodnotit',
+  'nudge.share': 'Sdílet odkaz',
+  'nudge.copied': 'Odkaz zkopírován',
+  'nudge.later': 'Později',
+  'nudge.shareText': 'You Are The Product ukazuje, kdo vás sleduje při prohlížení webu:',
 
   'legend.button': 'Legenda',
   'legend.site': 'Navštívená stránka',

@@ -81,6 +81,12 @@ export const ko: Messages = {
   'profile.hint': '원이나 기업을 클릭하면 자세히 볼 수 있어요.',
   'profile.close': '닫기',
   'dash.present': '프레젠테이션',
+  'nudge.text': '새로운 사실을 알게 되었나요? 평가나 친구·수업에 링크를 공유하면 다른 사람들이 이 확장 프로그램을 찾는 데 도움이 됩니다.',
+  'nudge.rate': '평가하기',
+  'nudge.share': '링크 공유',
+  'nudge.copied': '링크가 복사되었습니다',
+  'nudge.later': '나중에',
+  'nudge.shareText': 'You Are The Product는 웹을 탐색하는 동안 누가 당신을 추적하는지 보여 줍니다:',
 
   'legend.button': '범례',
   'legend.site': '방문한 사이트',

@@ -93,6 +93,12 @@ export const fr: Messages = {
   'profile.hint': 'Cliquez sur un cercle ou une entreprise pour voir les détails.',
   'profile.close': 'Fermer',
   'dash.present': 'Présentation',
+  'nudge.text': "Cela vous a ouvert les yeux ? Une note aide d'autres personnes à trouver l'extension, tout comme un lien envoyé à un ami ou à votre classe.",
+  'nudge.rate': 'Noter',
+  'nudge.share': 'Partager le lien',
+  'nudge.copied': 'Lien copié',
+  'nudge.later': 'Plus tard',
+  'nudge.shareText': 'You Are The Product montre qui vous piste pendant que vous naviguez :',
 
   'legend.button': 'Légende',
   'legend.site': 'Site visité',

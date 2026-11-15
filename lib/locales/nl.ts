@@ -90,6 +90,12 @@ export const nl: Messages = {
   'profile.hint': 'Klik op een cirkel of een bedrijf voor details.',
   'profile.close': 'Sluiten',
   'dash.present': 'Presentatie',
+  'nudge.text': 'Heeft dit je ogen geopend? Een beoordeling helpt anderen de extensie te vinden, net als een link naar een vriend of je klas.',
+  'nudge.rate': 'Beoordelen',
+  'nudge.share': 'Link delen',
+  'nudge.copied': 'Link gekopieerd',
+  'nudge.later': 'Later',
+  'nudge.shareText': 'You Are The Product laat zien wie je volgt terwijl je surft:',
 
   'legend.button': 'Legenda',
   'legend.site': 'Bezochte site',

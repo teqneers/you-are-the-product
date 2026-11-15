@@ -7,6 +7,7 @@ import { infrastructureToggle, isVisible, watchSettings, type Settings } from '@
 import { ownerOf, watchState, type State } from '@/lib/state';
 import { categoryOf, SENSITIVE, type SiteCategory } from '@/lib/site-categories';
 import { brokerOf } from '@/lib/brokers';
+import { close, loadNudge, reviewUrl, saveNudge, shouldShow, WEBSITE, type Nudge } from '@/lib/nudge';
 
 await initLanguage();
 translatePage();
@@ -171,6 +172,30 @@ function renderSidebar(state: State) {
   );
 }
 
+// Rate or share: shown after a few days of use, see lib/nudge.ts.
+const nudgeBox = document.getElementById('nudge')!;
+const nudgeReady = loadNudge();
+let nudge: Nudge | undefined;
+nudgeReady.then((n) => (nudge = n));
+const renderNudge = (state: State) => {
+  if (nudge) nudgeBox.hidden = !shouldShow(nudge, Object.keys(state.sites).length, Date.now());
+};
+const updateNudge = async (change: (n: Nudge) => Nudge) => {
+  nudge = change(nudge ?? (await nudgeReady));
+  nudgeBox.hidden = true;
+  await saveNudge(nudge);
+};
+document.getElementById('nudge-rate')!.setAttribute('href', reviewUrl());
+document.getElementById('nudge-rate')!.addEventListener('click', () => updateNudge((n) => ({ ...n, done: true })));
+document.getElementById('nudge-share')!.addEventListener('click', async (e) => {
+  const button = e.currentTarget as HTMLButtonElement;
+  await navigator.clipboard.writeText(`${t('nudge.shareText')} ${WEBSITE}`).catch(() => {});
+  button.textContent = t('nudge.copied');
+  setTimeout(() => updateNudge((n) => ({ ...n, done: true })), 2000);
+});
+document.getElementById('nudge-close')!.addEventListener('click', () => updateNudge((n) => close(n, Date.now())));
+nudgeReady.then(() => latest && renderNudge(latest));
+
 let scheduled = false;
 function render() {
   if (scheduled || !latest) return;
@@ -189,6 +214,7 @@ watchState((state) => {
   if (first) {
     renderGraph(state);
     renderSidebar(state);
+    renderNudge(state);
   } else render();
 });
 

@@ -93,6 +93,12 @@ export const es: Messages = {
   'profile.hint': 'Haz clic en un círculo o una empresa para ver detalles.',
   'profile.close': 'Cerrar',
   'dash.present': 'Presentación',
+  'nudge.text': '¿Te ha abierto los ojos? Una valoración ayuda a que otros encuentren la extensión, y también un enlace a un amigo o a tu clase.',
+  'nudge.rate': 'Valorar',
+  'nudge.share': 'Compartir enlace',
+  'nudge.copied': 'Enlace copiado',
+  'nudge.later': 'Más tarde',
+  'nudge.shareText': 'You Are The Product muestra quién te rastrea mientras navegas:',
 
   'legend.button': 'Leyenda',
   'legend.site': 'Sitio visitado',

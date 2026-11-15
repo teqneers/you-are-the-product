@@ -105,6 +105,12 @@ export const pt: Messages = {
   'profile.hint': 'Clique em um círculo ou em uma empresa para ver detalhes.',
   'profile.close': 'Fechar',
   'dash.present': 'Apresentação',
+  'nudge.text': 'Isto abriu-lhe os olhos? Uma avaliação ajuda outras pessoas a encontrar a extensão, tal como um link enviado a um amigo ou à sua turma.',
+  'nudge.rate': 'Avaliar',
+  'nudge.share': 'Partilhar link',
+  'nudge.copied': 'Link copiado',
+  'nudge.later': 'Mais tarde',
+  'nudge.shareText': 'You Are The Product mostra quem o segue enquanto navega:',
 
   'legend.button': 'Legenda',
   'legend.site': 'Site visitado',
