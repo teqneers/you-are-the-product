@@ -22,6 +22,7 @@ attention.** For Chrome, Firefox and Safari (macOS). It blocks nothing. It just 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/you-are-the-product/abjemhhjkaelkbiabifhfccpcdmmbiag"><img src="https://img.shields.io/chrome-web-store/v/abjemhhjkaelkbiabifhfccpcdmmbiag?label=Chrome%20Web%20Store&logo=googlechrome&logoColor=white&color=4285F4&style=for-the-badge" alt="Get it on the Chrome Web Store"></a>
   <a href="https://addons.mozilla.org/firefox/addon/you-are-the-product/"><img src="https://img.shields.io/amo/v/you-are-the-product?label=Firefox%20Add-ons&logo=firefoxbrowser&logoColor=white&color=FF7139&style=for-the-badge" alt="Get it on Firefox Add-ons"></a>
+  <a href="https://apps.apple.com/app/you-are-the-product/id6830843567"><img src="https://img.shields.io/itunes/v/6830843567?label=Mac%20App%20Store&logo=apple&logoColor=white&color=0D96F6&style=for-the-badge" alt="Get it on the Mac App Store"></a>
 </p>
 
 ![The live view on cnn.com: 29 companies watched one news page](docs/store/store-1.png)
@@ -157,7 +158,7 @@ everything at once.
   (Firefox 140 or newer).
 - **Chrome:** [Get it on the Chrome Web Store](https://chromewebstore.google.com/detail/you-are-the-product/abjemhhjkaelkbiabifhfccpcdmmbiag)
   (also works in Edge, Brave and other Chromium browsers).
-- **Safari (macOS):** Mac App Store coming soon.
+- **Safari (macOS):** [Get it on the Mac App Store](https://apps.apple.com/app/you-are-the-product/id6830843567) (macOS 12 or newer).
 
 ## Your privacy
 

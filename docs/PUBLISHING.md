@@ -80,7 +80,7 @@ needed for the single purpose and disclose everything clearly
    age rating, content rights), App Privacy (privacy policy URL per language, "Get Started" → no data collected →
    Publish) and Pricing and Availability (Add Pricing → free, Set Up Availability). The build shows up on the
    version page only once TestFlight lists it as "Ready to Submit" (reload the page).
-   Version 0.1.0 was submitted on 2026-11-04.
+   Version 0.1.0 was submitted on 2026-11-04 and approved on 2026-11-15.
 6. Every upload needs a new build number. For a fix to the same version, archive with a higher one, e.g.
    `xcodebuild … archive CURRENT_PROJECT_VERSION=2`. To swap the build of a version already in review: on the
    version page "Remove from Review" (or cancel the submission), choose the new build under Build, Save and add it
