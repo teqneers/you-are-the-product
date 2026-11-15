@@ -18,6 +18,7 @@ classroom demo times feasibility (observe-only `webRequest` + content scripts, n
 | 11 | ✅ **Link decoration:** fbclid/gclid explained, redirect chains, "copy clean link" | Firefox, DuckDuckGo | medium | ~½ day |
 | 12 | ✅ **Cookie lifetime:** "this ID follows you until 2028" | Blacklight | medium | ~½ day |
 | 13 | **Long-term statistics:** weeks and months at a glance: companies per day, the sites that leak most, how the numbers change after blocking or rejecting more often | Firefox Protections Dashboard, Lightbeam | medium-high | ~1–2 days (needs a compact daily history) |
+| 14 | **Mobile:** Firefox for Android runs extensions with `webRequest`, so the AMO listing could be marked Android-compatible (`browser_specific_settings.gecko_android`, popup layout for small screens). Safari on iOS: unclear whether `webRequest` works there, test first. Chrome on Android has no extensions | Firefox for Android, Safari iOS | high (students use phones) | Android ~1 day, iOS unknown |
 
 Licences: the project is GPL-3.0, so code from the [Blacklight collector](https://github.com/the-markup/blacklight-collector)
 (GPL-3.0) could be reused. Ghostery TrackerDB and Disconnect are CC BY-NC-SA 4.0 like the DuckDuckGo data;
