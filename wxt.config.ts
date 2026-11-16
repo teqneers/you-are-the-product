@@ -3,6 +3,24 @@ import { defineConfig } from 'wxt';
 export default defineConfig({
   // Sources zip for the AMO source code review: the Safari wrapper app is not part of the Firefox build.
   zip: { excludeSources: ['safari/**'] },
+  hooks: {
+    // Safari applies the site's Content Security Policy to a <script> the extension adds, so on many sites the
+    // page probe never loaded. A content script in the page's own world is not subject to it.
+    'build:manifestGenerated': (wxt, manifest) => {
+      if (wxt.config.browser !== 'safari') return;
+      manifest.content_scripts = [
+        ...(manifest.content_scripts ?? []),
+        {
+          matches: ['<all_urls>'],
+          js: ['page-probe.js'],
+          run_at: 'document_start',
+          all_frames: true,
+          match_about_blank: true,
+          world: 'MAIN',
+        } as NonNullable<typeof manifest.content_scripts>[number],
+      ];
+    },
+  },
   manifest: ({ browser }) => ({
     name: '__MSG_extName__',
     description: '__MSG_extDescription__',

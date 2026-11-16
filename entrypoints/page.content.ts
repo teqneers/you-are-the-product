@@ -23,6 +23,9 @@ export default defineContentScript({
         if (urls.length) notifyBackground({ type: 'favicon', urls });
       });
     }
-    await injectScript('/page-probe.js', { keepInDom: false });
+    // Safari runs the probe as a content script in the page's world (wxt.config.ts).
+    if (import.meta.env.BROWSER === 'safari') return;
+    // A strict Content Security Policy can still block it; the rest of the extension works without it.
+    await injectScript('/page-probe.js', { keepInDom: false }).catch(() => {});
   },
 });
