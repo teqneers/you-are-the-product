@@ -1,7 +1,7 @@
 {
   "name": "you-are-the-product",
   "description": "Shows live which companies follow you while you browse.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/teqneers/you-are-the-product",
   "repository": {
