@@ -61,7 +61,11 @@ Try it yourself: open any news site in a private window and watch the counter.
 
 ## Why this matters
 
-**Imagine a furniture store.** Retailers really did pay people to follow shoppers through the store and note every step: where they stopped, what they picked up, how long they looked. The researchers were even called "trackers" ([Paco Underhill, *Why We Buy*, 1999](https://en.wikipedia.org/wiki/Paco_Underhill)). If the store you walk into does that, you might put up with it. On the web, twenty strangers walk in with you. They start taking notes at the door, before you have said yes or no. Some stay after you said no. They sell their notes while you are still in the aisle, and when you drive to the pharmacy, the job centre or the next shop, they follow you there too. In a real store you would see them. Online they are invisible. This extension makes them visible.
+**Picture yourself walking into a furniture store.** Retailers really did pay people to follow you through the aisles. They noted where you stopped, what you touched and how long you looked. These observers were called "trackers" ([Paco Underhill, *Why We Buy*](https://en.wikipedia.org/wiki/Paco_Underhill)). That was the store itself. Annoying, maybe, but you are its guest.
+
+**Online, twenty strangers walk in with you.** At the door, someone asks: "Can they come along?" That's the cookie banner. But many start taking notes while you are still deciding, and some stay even after you say no. They sell their notes while you are still in the aisle. Then they follow you out: to the pharmacy, the job centre, the debt counsellor. At night, they put their notes together.
+
+**In a real store you would see them. Online they are invisible.** This extension makes them visible. Only once you see them can you decide who gets to come in.
 
 **If you're not paying, you are the product.** Most of the web is free because your attention is sold. Not
 your name, usually: a profile. Which pages you read, which products you looked at, when you are online, what

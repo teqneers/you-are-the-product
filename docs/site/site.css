@@ -434,3 +434,11 @@ footer a {
   border-radius: 0 12px 12px 0;
   color: var(--text);
 }
+
+.intro.story p {
+  margin: 0;
+}
+
+.intro.story p + p {
+  margin-top: 12px;
+}
