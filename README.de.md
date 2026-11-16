@@ -62,6 +62,8 @@ Probier es selbst: Öffne eine beliebige Nachrichtenseite in einem privaten Fens
 
 ## Warum das wichtig ist
 
+**Stell dir ein Möbelhaus vor.** Händler haben tatsächlich Leute bezahlt, die Kunden durch den Laden folgten und jeden Schritt notierten: wo sie stehen blieben, was sie in die Hand nahmen, wie lange sie schauten. Die Beobachter hießen sogar „Tracker“ ([Paco Underhill, *Why We Buy*, 1999](https://en.wikipedia.org/wiki/Paco_Underhill)). Wenn das der Laden macht, in den du gehst, kann man das vielleicht noch hinnehmen. Im Netz gehen zwanzig Fremde mit dir hinein. Sie schreiben schon an der Tür mit, bevor du Ja oder Nein gesagt hast. Manche bleiben, obwohl du Nein gesagt hast. Sie verkaufen ihre Notizen, während du noch im Gang stehst, und wenn du zur Apotheke, zum Jobcenter oder in den nächsten Laden fährst, fahren sie dir hinterher. Im echten Laden würdest du sie sehen. Im Netz sind sie unsichtbar. Diese Extension macht sie sichtbar.
+
 **Wenn du nicht bezahlst, bist du das Produkt.** Der größte Teil des Webs ist kostenlos, weil deine
 Aufmerksamkeit verkauft wird. Meist nicht dein Name, sondern ein Profil: welche Seiten du liest, welche Produkte
 du dir ansiehst, wann du online bist, welches Gerät du nutzt. Jede der 145 Firmen auf dieser Liste kann ein

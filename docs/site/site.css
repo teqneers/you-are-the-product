@@ -425,3 +425,12 @@ footer a {
     transition: none;
   }
 }
+
+.intro.story {
+  max-width: 760px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--accent);
+  background: var(--panel);
+  border-radius: 0 12px 12px 0;
+  color: var(--text);
+}
